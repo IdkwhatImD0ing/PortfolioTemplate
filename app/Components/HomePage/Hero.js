@@ -6,7 +6,7 @@ import Matrix from './Matrix';
 export default function Hero() {
   return (
     <>
-      <Matrix fullscreen={true} speed={1} />
+      <Matrix fullscreen={true} speed={1} color="#9D00FF" />
       <Box
         height="100vh"
         width="100vw"
