@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.13",
     "next": "13.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-matrix-effect": "^1.1.0",
     "sass": "^1.56.1",
     "typewriter-effect": "^2.19.0"
   },
