@@ -11,7 +11,6 @@ export default function Hero() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-
         backgroundColor: 'black',
       }}
     >
@@ -19,6 +18,7 @@ export default function Hero() {
       <Stack maxWidth="60vw" direction="column" alignItems="center">
         <Typography
           variant="h5"
+          align="center"
           sx={{
             color: 'pink',
             mb: 2,
@@ -27,6 +27,7 @@ export default function Hero() {
           Hello There! I&apos;m Bill Zhang
         </Typography>
         <Typography
+          align="center"
           sx={{
             color: 'white',
             fontFamily: 'sans-serif',

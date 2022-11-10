@@ -18,8 +18,8 @@ export default function Topbar() {
       <Stack
         direction="row"
         alignItems="center"
-        justifyContent="center"
-        spacing={10}
+        justifyContent="space-evenly"
+        spacing={2}
       >
         <Button>Projects</Button>
         <Button>Education</Button>
