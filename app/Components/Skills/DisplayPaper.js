@@ -17,7 +17,7 @@ export default function DisplayPaper(props) {
         justifyContent: 'center',
 
         animationName: 'floating',
-        animationDuration: '3s',
+        animationDuration: '5s',
         animationIterationCount: 'infinite',
         animationTimingFunction: 'ease-in-out',
 

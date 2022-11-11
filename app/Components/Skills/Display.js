@@ -33,6 +33,7 @@ export default function Display() {
         width="100vw"
         sx={{
           display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
 
@@ -41,6 +42,16 @@ export default function Display() {
           left: 0,
         }}
       >
+        <Typography
+          variant="h1"
+          color="white"
+          sx={{
+            position: 'absolute',
+            top: '10vh',
+          }}
+        >
+          Skills
+        </Typography>
         <Stack
           width="100%"
           spacing={5}
