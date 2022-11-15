@@ -8,10 +8,7 @@ import Botbar from '../Components/Botbar';
 export default function HomePage() {
   return (
     <>
-      <Matrix fullscreen={true} speed={1} color="#9D00FF" />
       <Hero />
-      <Topbar />
-      <Botbar />
     </>
   );
 }

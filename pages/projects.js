@@ -7,8 +7,6 @@ export default function Projects() {
   return (
     <>
       <ProjectDisplay />
-      <Topbar />
-      <Botbar />
     </>
   );
 }

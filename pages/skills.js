@@ -7,10 +7,7 @@ import Botbar from '../Components/Botbar';
 export default function Skills() {
   return (
     <>
-      <Matrix fullscreen={true} speed={1} color="#9D00FF" />
       <Display />
-      <Topbar />
-      <Botbar />
     </>
   );
 }
