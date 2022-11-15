@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Make Me Lunch",
+    "description": "MakeMeLunch is a simple web app that allows you to create a list of ingredients and recipes and then generate a shopping list based on the ingredients in the recipes. Furthermore, it can take in an inventory of ingredients and generate a list of recipes that can be made with the ingredients in the inventory.",
+    "code": "SmRpW295Xkk",
+    "techStack": ["React", "firebase", "rapidapi"],
+    "link": "https://makemelunch.xyz/",
+    "github": "https://github.com/IdkwhatImD0ing/MakeMeLunch"
+  },
+  {
+    "name": "Pool Party",
+    "description": "Pool Party is a web app built primarily for mobile but works on all platforms. Pool Party lets users create a pool of people who are going to the same place at the same time. Users can then add themselves to the pool as either drivers or passengers. Drivers can then see the list of passengers and choose who they want to pick up. Passengers can see the list of drivers and choose who they want to ride with.",
+    "code": "UEInrwiA_r8",
+    "techStack": ["React", "ExpressJs", "Hop.io"],
+    "link": "https://mypoolparty.tech/",
+    "github": "https://github.com/IdkwhatImD0ing/PoolParty"
+  },
+  {
+    "name": "Remote Trainer",
+    "description": "RemoteTrainer allows people to filter and search through the muscle groups they are trying to work out as well as the equipment they have, and after submitting that information, RemoteTrainer will show a list of exercises that the user can use. Moreoever, a gif is provided showing how to perform the exercise, as well as some small details about the exercise. The app will also keep track of the users BMI and body fat as the user keeps updating their information regarding age, height, weight, etc.",
+    "code": "vL-X-1XrIN0",
+    "techStack": ["React", "firebase", "rapidapi"],
+    "link": "https://remotetrainer.live/",
+    "github": "https://github.com/IdkwhatImD0ing/ExerciseTracker"
+  },
+  {
+    "name": "Tetris Coop",
+    "description": "Tetris Duels lets you play Tetris alone or with family and friends. Compete to see who can get the highest score!",
+    "code": "y8wPmVJEqlc",
+    "techStack": ["React", "ExpressJs", "Hop.io"],
+    "link": "https://tetrisduels.hop.sh/",
+    "github": "https://github.com/IdkwhatImD0ing/tetris-coop"
+  },
+  {
+    "name": "ASL-Transcription",
+    "description": "The lens would automatically convert the letters into text, letting him create content without worrying about writing captions for every single action. Apart from helping transcribe ASL in real time. This lens could also be used as a learning tool for ASL. Real time transcription allows the user to practice speed and accuracy without the need for an interpreter.",
+    "code": "Nat5vQGsyxA",
+    "techStack": ["javascript", "python", "tensorflow", "keras"],
+    "link": "https://lens.snapchat.com/16642dd15be74124ac470c53a82d46fc",
+    "github": "https://github.com/IdkwhatImD0ing/ASL-Transcription"
+  },
+  {
+    "name": "Exalt",
+    "description": "Basically a rudimentary clone of the game Realm of the Mad God coded in java.",
+    "code": "aaFkC9SpMhk",
+    "techStack": ["java"],
+    "link": "https://github.com/IdkwhatImD0ing/BulletHellGame/releases/tag/v1.0.1",
+    "github": "https://github.com/IdkwhatImD0ing/BulletHellGame"
+  }
+]

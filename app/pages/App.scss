@@ -25,10 +25,10 @@ $shooting-time: 3000ms;
 
 .night { // Should cover entire screen after rotating without overflowing
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 45%;
-  height: 45%;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
   transform: rotateZ(45deg);
   overflow: hidden;
   //animation: sky 200000ms linear infinite;

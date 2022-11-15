@@ -16,8 +16,11 @@
     "@mui/material": "^5.10.13",
     "next": "13.0.2",
     "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-matrix-effect": "^1.1.0",
+    "react-scroll-motion": "^0.3.0",
+    "react-youtube": "^10.0.0",
     "sass": "^1.56.1",
     "typewriter-effect": "^2.19.0"
   },
