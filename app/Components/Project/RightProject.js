@@ -32,6 +32,10 @@ export default function LeftProject(props) {
       spacing={5}
       justifyContent="space-between"
       alignItems="center"
+      sx={{
+        paddingLeft: '5vw',
+        paddingRight: '5vw',
+      }}
     >
       {windowHeight && <YouTube videoId={props.code} opts={opt} />}
 

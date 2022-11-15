@@ -27,56 +27,53 @@ const libraries = [
 
 export default function Display() {
   return (
-    <>
-      <Box
-        height="100vh"
-        width="100vw"
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
+    <Box
+      height="100vh"
+      width="100vw"
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
 
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}
+    >
+      <Typography
+        variant="h1"
+        color="white"
+        sx={{
           position: 'absolute',
-          top: 0,
-          left: 0,
+          top: '10vh',
         }}
       >
-        <Typography
-          variant="h1"
-          color="white"
-          sx={{
-            position: 'absolute',
-            top: '10vh',
-          }}
-        >
-          Skills
-        </Typography>
-        <Stack
-          width="100%"
-          spacing={5}
-          direction="row"
-          alignItems="center"
-          justifyContent="space-evenly"
-          sx={{
-            paddingLeft: '10vw',
-            paddingRight: '10vw',
-          }}
-        >
-          <DisplayPaper height="30vh" name="Programming Languages">
-            <TableDisplay fields={programmingLanguages} />
-          </DisplayPaper>
-          <DisplayPaper height="50vh" name="Frameworks">
-            <TableDisplay fields={frameworks} />
-          </DisplayPaper>
-          <DisplayPaper height="50vh" name="Libraries">
-            <TableDisplay fields={libraries} />
-          </DisplayPaper>
-          <DisplayPaper height="30vh" name="Databases">
-            <TableDisplay fields={databases} />
-          </DisplayPaper>
-        </Stack>
-      </Box>
-    </>
+        Skills
+      </Typography>
+      <Stack
+        width="100%"
+        spacing={5}
+        direction="row"
+        alignItems="center"
+        justifyContent="space-evenly"
+        sx={{
+          paddingLeft: '10vw',
+          paddingRight: '10vw',
+        }}
+      >
+        <DisplayPaper height="30vh" name="Programming Languages">
+          <TableDisplay fields={programmingLanguages} />
+        </DisplayPaper>
+        <DisplayPaper height="50vh" name="Frameworks">
+          <TableDisplay fields={frameworks} />
+        </DisplayPaper>
+        <DisplayPaper height="50vh" name="Libraries">
+          <TableDisplay fields={libraries} />
+        </DisplayPaper>
+        <DisplayPaper height="30vh" name="Databases">
+          <TableDisplay fields={databases} />
+        </DisplayPaper>
+      </Stack>
+    </Box>
   );
 }
