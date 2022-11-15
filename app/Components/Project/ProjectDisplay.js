@@ -33,7 +33,6 @@ export default function ProjectDisplay() {
             return (
               <LeftProject
                 key={index}
-                key2={index}
                 name={project.name}
                 description={project.description}
                 code={project.code}
@@ -45,7 +44,6 @@ export default function ProjectDisplay() {
             return (
               <RightProject
                 key={index}
-                key2={index}
                 name={project.name}
                 description={project.description}
                 code={project.code}

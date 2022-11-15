@@ -50,10 +50,10 @@ export default function LeftProject(props) {
         </Typography>
         <Typography variant="h6">{props.description}</Typography>
         <Typography variant="h6" align="center">
-          Demo Link: {props.link}
+          Demo Link: <a href={props.link}>{props.link}</a>
         </Typography>
         <Typography variant="h6" align="center">
-          Github: {props.github}
+          Github: <a href={props.link}>{props.github}</a>
         </Typography>
       </Stack>
     </Stack>
