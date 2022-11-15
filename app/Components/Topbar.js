@@ -32,12 +32,18 @@ export default function Topbar() {
         </Button>
         <Button
           onClick={() => {
-            rounter.push('projects');
+            rounter.push('/projects');
           }}
         >
           Projects
         </Button>
-        <Button>Education</Button>
+        <Button
+          onClick={() => {
+            rounter.push('/education');
+          }}
+        >
+          Education
+        </Button>
         <Button
           onClick={() => {
             rounter.push('/skills');

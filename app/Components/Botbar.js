@@ -30,13 +30,18 @@ export default function Botbar() {
           href="https://www.linkedin.com/in/bill-zhang-57976b1b3/"
           target="_blank"
         >
-          <Image src="/LinkedIn.png" width="30" height="30" />
+          <Image
+            src="/LinkedIn.png"
+            width="30"
+            height="30"
+            alt="LinkedIn Logo"
+          />
         </Link>
         <Link href="https://github.com/IdkwhatImD0ing/" target="_blank">
-          <Image src="/github.png" width="30" height="30" />
+          <Image src="/github.png" width="30" height="30" alt="Github Logo" />
         </Link>
         <Link href="https://devpost.com/IdkwhatImD0ing/" target="_blank">
-          <Image src="/devpost.png" width="30" height="30" />
+          <Image src="/devpost.png" width="30" height="30" alt="Devpost Logo" />
         </Link>
       </Stack>
     </Box>
