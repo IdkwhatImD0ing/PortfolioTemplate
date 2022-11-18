@@ -42,17 +42,12 @@ export default function EducationDisplay() {
       >
         Areas of Focus: Full-Stack Web Dev, Machine Learning
       </Typography>
-      <Stack
-        direction="row"
-        alignItems="center"
-        justifyContent="space-around"
-        spacing={20}
-      >
+      <Stack direction="row" justifyContent="space-around" spacing={20}>
         <Stack
           width="30%"
           direction="column"
           alignItems="center"
-          justifyContent="center"
+          justifyContent="flex-start"
           spacing={5}
         >
           <Box
@@ -73,7 +68,7 @@ export default function EducationDisplay() {
           width="30%"
           direction="column"
           alignItems="center"
-          justifyContent="center"
+          justifyContent="flex-start"
           spacing={5}
         >
           <Box
