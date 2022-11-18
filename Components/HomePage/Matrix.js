@@ -116,7 +116,7 @@ export default class Matrix extends React.Component {
         style={{
           ...style,
           background: '#000000',
-          width: this.props.fullscreen ? '100vw' : this.props.width + 'px',
+          width: this.props.fullscreen ? '100%' : this.props.width + 'px',
           height: this.props.fullscreen ? '100vh' : this.props.height + 'px',
           overflow: 'hidden',
           zIndex: this.props.zIndex,
