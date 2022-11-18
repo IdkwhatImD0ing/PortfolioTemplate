@@ -2,11 +2,12 @@ import React, {useEffect} from 'react';
 import Typewriter from 'typewriter-effect';
 
 const words = [
+  'Full-Stack Developer',
+  'Gamer',
   'Software Engineer',
-  'Web Developer',
-  'Full Stack Developer',
-  'React Developer',
-  'JavaScript Developer',
+  'Musician',
+  'Back-End Developer',
+  'Developer',
 ];
 
 export default function Typer() {

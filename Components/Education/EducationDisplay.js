@@ -10,19 +10,46 @@ export default function EducationDisplay() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
 
         position: 'absolute',
         top: 0,
         left: 0,
       }}
     >
+      <Typography
+        color="white"
+        variant="h2"
+        sx={{
+          mb: 2,
+        }}
+      >
+        Education:
+      </Typography>
+      <Typography
+        color="white"
+        sx={{
+          mb: 1,
+        }}
+      >
+        Major: Computer Science BS
+      </Typography>
+      <Typography
+        color="white"
+        sx={{
+          mb: 10,
+        }}
+      >
+        Areas of Focus: Full-Stack Web Dev, Machine Learning
+      </Typography>
       <Stack
-        width="80%"
         direction="row"
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent="space-around"
+        spacing={20}
       >
         <Stack
+          width="30%"
           direction="column"
           alignItems="center"
           justifyContent="center"
@@ -31,16 +58,19 @@ export default function EducationDisplay() {
           <Box
             component="img"
             src="/lynbrook.png"
-            width="200px"
-            height="200px"
+            width="300px"
+            height="300px"
             alt="lynbrook logo"
           />
-          <Typography color="white" variant="h3">
+          <Typography color="white" variant="h3" align="center">
             Lynbrook High School
           </Typography>
-          <Typography color="white">Dates: 2016-2020</Typography>
+          <Typography color="white" align="center">
+            Dates: 2016-2020
+          </Typography>
         </Stack>
         <Stack
+          width="30%"
           direction="column"
           alignItems="center"
           justifyContent="center"
@@ -53,13 +83,11 @@ export default function EducationDisplay() {
             height="300px"
             alt="ucsc logo"
           />
-          <Typography color="white" variant="h3">
+          <Typography color="white" variant="h3" align="center">
             University of California: Santa Cruz
           </Typography>
-          <Typography color="white">Dates: 2020-2023</Typography>
-          <Typography color="white">Major: Computer Science BS</Typography>
-          <Typography color="white">
-            Areas of Focus: Full-Stack Web Dev, Machine Learning
+          <Typography color="white" align="center">
+            Dates: 2020-2023
           </Typography>
         </Stack>
       </Stack>
