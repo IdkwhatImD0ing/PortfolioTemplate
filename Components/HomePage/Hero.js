@@ -16,9 +16,10 @@ export default function Hero() {
         position: 'absolute',
         top: 0,
         left: 0,
+
+        overflow: 'hidden',
       }}
     >
-
       <Stack maxWidth="60vw" direction="column" alignItems="center">
         <Typography
           variant="h5"

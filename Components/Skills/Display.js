@@ -38,6 +38,8 @@ export default function Display() {
         position: 'absolute',
         top: 0,
         left: 0,
+
+        overflow: 'hidden',
       }}
     >
       <Typography
