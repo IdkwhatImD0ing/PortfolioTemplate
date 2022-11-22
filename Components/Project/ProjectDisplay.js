@@ -15,7 +15,6 @@ export default function ProjectDisplay() {
         justifyContent: 'center',
         alignItems: 'center',
 
-        backgroundColor: '#CBC3E3',
         position: 'absolute',
         top: 0,
         left: 0,

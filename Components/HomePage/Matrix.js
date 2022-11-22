@@ -120,6 +120,7 @@ export default class Matrix extends React.Component {
           height: this.props.fullscreen ? '100vh' : this.props.height + 'px',
           overflow: 'hidden',
           zIndex: this.props.zIndex,
+          position: 'fixed',
         }}
       >
         <canvas ref="canvas" />

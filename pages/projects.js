@@ -1,7 +1,7 @@
 import React from 'react';
-import Botbar from '../Components/Botbar';
+import Matrix from '../Components/HomePage/Matrix';
 import ProjectDisplay from '../Components/Project/ProjectDisplay';
-import Topbar from '../Components/Topbar';
+import {Box} from '@mui/material';
 
 export default function Projects() {
   return (

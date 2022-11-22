@@ -44,17 +44,36 @@ export default function LeftProject(props) {
         justifyContent="space-between"
         alignItems="center"
         spacing={2}
+        padding="5%"
       >
-        <Typography variant="h3" align="center">
-          {props.name}
-        </Typography>
-        <Typography variant="h6">{props.description}</Typography>
-        <Typography variant="h6" align="center">
-          Demo Link: <a href={props.link}>{props.link}</a>
-        </Typography>
-        <Typography variant="h6" align="center">
-          Github: <a href={props.link}>{props.github}</a>
-        </Typography>
+        <Box
+          sx={{
+            marginTop: 0,
+            alignItems: 'center',
+            backdropFilter: 'blur(10px)',
+            boxShadow: '0px 0px 10px #000000',
+            padding: '10%',
+            backgroundColor: 'rgba(255, 255, 255, 0.375)',
+          }}
+        >
+          <Typography variant="h3" align="center" sx={{mb: 5}}>
+            {props.name}
+          </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              mb: 2,
+            }}
+          >
+            {props.description}
+          </Typography>
+          <Typography variant="h6" align="center">
+            Demo Link: <a href={props.link}>{props.link}</a>
+          </Typography>
+          <Typography variant="h6" align="center">
+            Github: <a href={props.link}>{props.github}</a>
+          </Typography>
+        </Box>
       </Stack>
     </Stack>
   );
