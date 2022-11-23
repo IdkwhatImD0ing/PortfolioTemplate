@@ -4,8 +4,8 @@ import {Box, Stack, Typography} from '@mui/material';
 export default function EducationDisplay() {
   return (
     <Box
-      height="100vh"
-      width="100vw"
+      height="100%"
+      width="100%"
       sx={{
         display: 'flex',
         justifyContent: 'center',
@@ -44,22 +44,27 @@ export default function EducationDisplay() {
       >
         Areas of Focus: Full-Stack Web Dev, Machine Learning
       </Typography>
-      <Stack direction="row" justifyContent="space-around" spacing={20}>
+      <Stack
+        maxHeight="60%"
+        direction="row"
+        justifyContent="space-around"
+        spacing="20%"
+      >
         <Stack
           width="30%"
           direction="column"
           alignItems="center"
           justifyContent="flex-start"
-          spacing={5}
+          spacing={2}
         >
           <Box
             component="img"
             src="/lynbrook.png"
-            width="300px"
-            height="300px"
+            width="200px"
+            height="200px"
             alt="lynbrook logo"
           />
-          <Typography color="white" variant="h3" align="center">
+          <Typography color="white" variant="h4" align="center">
             Lynbrook High School
           </Typography>
           <Typography color="white" align="center">
@@ -71,16 +76,16 @@ export default function EducationDisplay() {
           direction="column"
           alignItems="center"
           justifyContent="flex-start"
-          spacing={5}
+          spacing={2}
         >
           <Box
             component="img"
             src="/ucsc.png"
-            width="300px"
-            height="300px"
+            width="200px"
+            height="200px"
             alt="ucsc logo"
           />
-          <Typography color="white" variant="h3" align="center">
+          <Typography color="white" variant="h4" align="center">
             University of California: Santa Cruz
           </Typography>
           <Typography color="white" align="center">

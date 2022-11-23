@@ -51,12 +51,13 @@ export default function Hero() {
             mt: 5,
           }}
         >
-          I am currently a third-year majoring in Computer Science at UC Santa
-          Cruz. I am a motivated Computer Programmer experienced in leadership
-          and problem solving with a strong foundation in math and physics.
-          Comfortable with multiple programming languages with an emphasis on
-          machine learning and full-stack web development. Am able to work
-          efficiently collaboratively or autonomously.
+          About I am currently a Third Year Undergrad at the University of
+          California - Santa Cruz. Currently majoring in Computer Science with a
+          focus in Machine Learning and Full-Stack Web Development. I consider
+          myself a Full-Stack Developer with experience in React, NextJs,
+          NodeJs, ExpressJs, Flask, and PostGres. I have considerable experience
+          in Applied Machine Learning through the use of personal projects and
+          Kaggle Competitions.
         </Typography>
       </Stack>
     </Box>
