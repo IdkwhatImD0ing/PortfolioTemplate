@@ -7,7 +7,7 @@ export default function HomePage() {
     <>
       <Head>
         <title>Home</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <Hero />
     </>

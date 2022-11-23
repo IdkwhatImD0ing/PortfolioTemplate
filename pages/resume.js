@@ -8,7 +8,7 @@ export default function Resume() {
     <>
       <Head>
         <title>Resume</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <ResumeDisplay />
     </>

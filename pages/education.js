@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Head>
         <title>Education</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <EducationDisplay />
     </>

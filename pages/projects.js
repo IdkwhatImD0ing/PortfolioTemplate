@@ -7,7 +7,7 @@ export default function Projects() {
     <>
       <Head>
         <title>Projects</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <ProjectDisplay />
     </>

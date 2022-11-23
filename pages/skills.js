@@ -7,7 +7,7 @@ export default function Skills() {
     <>
       <Head>
         <title>Skills</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
       <Display />
     </>
