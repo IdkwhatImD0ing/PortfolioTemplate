@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-const ResumeDisplay = dynamic(() => import('../components/ResumeDisplay'), {
+const ResumeDisplay = dynamic(() => import('../Components/ResumeDisplay'), {
   ssr: false,
 });
 export default function Resume() {
