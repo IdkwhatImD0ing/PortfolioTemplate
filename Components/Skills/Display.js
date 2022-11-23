@@ -43,7 +43,7 @@ export default function Display() {
       }}
     >
       <Typography
-        variant="h1"
+        variant="h3"
         color="white"
         sx={{
           position: 'absolute',

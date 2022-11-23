@@ -21,12 +21,12 @@ export default function EducationDisplay() {
     >
       <Typography
         color="white"
-        variant="h2"
+        variant="h3"
         sx={{
           mb: 2,
         }}
       >
-        Education:
+        Education
       </Typography>
       <Typography
         color="white"

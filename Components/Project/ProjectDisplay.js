@@ -19,12 +19,12 @@ export default function ProjectDisplay() {
         top: 0,
         left: 0,
 
-        paddingTop: '15vh',
+        paddingTop: '10vh',
         paddingBottom: '20vh',
       }}
     >
       <Stack direction="column" width="100%" spacing={10} sx={{}}>
-        <Typography variant="h1" align="center" color="white">
+        <Typography variant="h3" align="center" color="white">
           Personal Projects
         </Typography>
         {Projects.map((project, index) => {

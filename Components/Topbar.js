@@ -51,6 +51,13 @@ export default function Topbar() {
         >
           Skills
         </Button>
+        <Button
+          onClick={() => {
+            rounter.push('/resume');
+          }}
+        >
+          Resume
+        </Button>
         <Button>Awards</Button>
       </Stack>
     </Box>
