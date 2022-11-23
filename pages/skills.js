@@ -1,12 +1,14 @@
 import React from 'react';
-import Topbar from '../Components/Topbar';
 import Display from '../Components/Skills/Display';
-import Matrix from '../Components/HomePage/Matrix';
-import Botbar from '../Components/Botbar';
+import Head from 'next/head';
 
 export default function Skills() {
   return (
     <>
+      <Head>
+        <title>Skills</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Display />
     </>
   );

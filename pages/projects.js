@@ -1,11 +1,14 @@
 import React from 'react';
-import Matrix from '../Components/HomePage/Matrix';
 import ProjectDisplay from '../Components/Project/ProjectDisplay';
-import {Box} from '@mui/material';
+import Head from 'next/head';
 
 export default function Projects() {
   return (
     <>
+      <Head>
+        <title>Projects</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <ProjectDisplay />
     </>
   );

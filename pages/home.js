@@ -1,13 +1,14 @@
 import Hero from '../Components/HomePage/Hero';
-import ShootingStar from '../Components/HomePage/Shootingstar';
 import React from 'react';
-import Matrix from '../Components/HomePage/Matrix';
-import Topbar from '../Components/Topbar';
-import Botbar from '../Components/Botbar';
+import Head from 'next/head';
 
 export default function HomePage() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero />
     </>
   );
