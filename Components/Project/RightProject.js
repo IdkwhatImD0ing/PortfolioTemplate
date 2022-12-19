@@ -35,7 +35,9 @@ export default function LeftProject(props) {
     >
       {windowHeight && (
         <Grid item xs={6}>
-          <YouTube videoId={props.code} opts={opt} />
+          <Box alignItems="center" padding="5%">
+            <YouTube videoId={props.code} opts={opt} />
+          </Box>
         </Grid>
       )}
       <Grid item xs={6}>
