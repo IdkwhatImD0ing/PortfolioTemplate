@@ -24,6 +24,14 @@
     "github": "https://github.com/IdkwhatImD0ing/ExerciseTracker"
   },
   {
+    "name": "PrognoD",
+    "description": "Progno-D is a web-based artificial intelligence (AI) tool that helps users select the most appropriate medication for their illness. It provides recommendations for multiple drugs based on customer reviews and ratings from the past. The app uses a variety of features, such as ratings and reviews, to generate these recommendations. This helps users make informed decisions about which medication to use, based on the experiences of others. In addition to providing recommendations, Progno-D also allows users to learn more about each drug, including its common manufacturers and active ingredients. This information can help users understand the potential risks and benefits of each medication and make more informed choices. Overall, Progno-D is a valuable resource for anyone looking to find the right medication for their needs.",
+    "code": "eqZS5WqHXW4",
+    "techStack": ["React", "Flask", "RapidApi", "Hop.io", "NLTK"],
+    "link": "https://prognod.hop.sh/",
+    "github": "https://github.com/RupakKadhare15/Progno-D"
+  },
+  {
     "name": "Tetris Coop",
     "description": "Tetris Duels is a classic puzzle game that allows players to test their skills and strategy against others. In this game, players can choose to play solo or with family and friends in a competitive multiplayer mode. The goal is to score as many points as possible by strategically placing falling blocks called tetrominoes to form lines without any gaps. As the game progresses, the blocks fall faster and become more difficult to manage, requiring quick thinking and precise movements. With its simple gameplay and endless replay value, Tetris Duels is a fun and addictive game for players of all ages.",
     "code": "y8wPmVJEqlc",
