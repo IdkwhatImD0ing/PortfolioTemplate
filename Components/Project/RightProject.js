@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Box, Stack, Typography} from '@mui/material';
+import {Box, Button, Grid, Stack, Typography} from '@mui/material';
 import YouTube from 'react-youtube';
 
 export default function LeftProject(props) {
@@ -20,61 +20,110 @@ export default function LeftProject(props) {
 
   const opt = {
     height: `${windowHeight * 0.5}`,
-    width: `${windowWidth * 0.4}`,
+    width: `${windowWidth * 0.45}`,
     playerVars: {
       autoplay: 0,
     },
   };
 
   return (
-    <Stack
+    <Grid
+      container
       direction="row-reverse"
-      spacing={5}
-      justifyContent="space-between"
       alignItems="center"
-      sx={{
-        paddingLeft: '5vw',
-        paddingRight: '5vw',
-      }}
+      justifyContent="center"
     >
-      {windowHeight && <YouTube videoId={props.code} opts={opt} />}
-
-      <Stack
-        direction="column"
-        justifyContent="space-between"
-        alignItems="center"
-        spacing={2}
-        padding="5%"
-      >
-        <Box
-          sx={{
-            marginTop: 0,
-            alignItems: 'center',
-            backdropFilter: 'blur(10px)',
-            boxShadow: '0px 0px 10px #000000',
-            padding: '10%',
-            backgroundColor: 'rgba(255, 255, 255, 0.375)',
-          }}
+      {windowHeight && (
+        <Grid item xs={6}>
+          <YouTube videoId={props.code} opts={opt} />
+        </Grid>
+      )}
+      <Grid item xs={6}>
+        <Stack
+          direction="column"
+          justifyContent="space-between"
+          alignItems="center"
+          spacing={2}
+          padding="5%"
         >
-          <Typography variant="h3" align="center" sx={{mb: 5}}>
-            {props.name}
-          </Typography>
-          <Typography
-            variant="h6"
+          <Box
             sx={{
-              mb: 2,
+              marginTop: 0,
+              alignItems: 'center',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0px 0px 10px #000000',
+              padding: '10%',
+              backgroundColor: 'rgba(255, 255, 255, 0.375)',
             }}
           >
-            {props.description}
-          </Typography>
-          <Typography variant="h6" align="center">
-            Demo Link: <a href={props.link}>Link</a>
-          </Typography>
-          <Typography variant="h6" align="center">
-            Github: <a href={props.link}>Link</a>
-          </Typography>
-        </Box>
-      </Stack>
-    </Stack>
+            <Typography variant="h3" align="center" sx={{mb: 5}}>
+              {props.name}
+            </Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                mb: 2,
+              }}
+            >
+              {props.description}
+            </Typography>
+            <Stack direction="row" spacing={2}>
+              <Typography variant="h6" sx={{mb: 2}}>
+                Technologies Used:
+              </Typography>
+              {props.techStack.map((tech) => (
+                <Typography variant="h6" sx={{mb: 2}}>
+                  {tech}
+                </Typography>
+              ))}
+            </Stack>
+            <Stack
+              direction="row"
+              spacing={2}
+              justifyContent="center"
+              alignItems="center"
+              sx={{
+                mb: 2,
+              }}
+            >
+              <Button
+                variant="contained"
+                onClick={() => window.open(props.link)}
+                sx={{
+                  borderRadius: 50,
+                }}
+              >
+                <Typography
+                  variant="h7"
+                  align="center"
+                  sx={{
+                    textTransform: 'none',
+                  }}
+                >
+                  Demo
+                </Typography>
+              </Button>
+              <Button
+                variant="contained"
+                onClick={() => window.open(props.github)}
+                sx={{
+                  borderRadius: 50,
+                }}
+              >
+                <Typography
+                  variant="h7"
+                  align="center"
+                  sx={{
+                    textTransform: 'none',
+                  }}
+                >
+                  Github
+                </Typography>
+              </Button>
+            </Stack>
+          </Box>
+        </Stack>
+      </Grid>
+    </Grid>
   );
 }

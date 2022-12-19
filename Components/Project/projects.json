@@ -1,15 +1,15 @@
 [
   {
     "name": "Make Me Lunch",
-    "description": "MakeMeLunch is a simple web app that allows you to create a list of ingredients and recipes and then generate a shopping list based on the ingredients in the recipes. Furthermore, it can take in an inventory of ingredients and generate a list of recipes that can be made with the ingredients in the inventory.",
+    "description": "MakeMeLunch is a web-based meal planning and grocery shopping tool that helps users organize and optimize their food-related tasks. The app allows users to create a list of ingredients and recipes, and then generates a shopping list based on the ingredients needed for the selected recipes. This helps users save time and money by avoiding unnecessary purchases and reducing food waste. In addition to generating shopping lists, MakeMeLunch can also take in an inventory of ingredients that the user already has on hand and generate a list of recipes that can be made with those ingredients. This feature is particularly useful for those who want to use up ingredients that they already have or who want to save money by using what they already have in their pantry. Overall, MakeMeLunch is an easy-to-use and convenient tool for anyone looking to streamline their meal planning and grocery shopping processes.",
     "code": "SmRpW295Xkk",
-    "techStack": ["React", "firebase", "rapidapi"],
+    "techStack": ["React", "Firebase", "RapidApi"],
     "link": "https://makemelunch.xyz/",
     "github": "https://github.com/IdkwhatImD0ing/MakeMeLunch"
   },
   {
     "name": "Pool Party",
-    "description": "Pool Party is a web app built primarily for mobile but works on all platforms. Pool Party lets users create a pool of people who are going to the same place at the same time. Users can then add themselves to the pool as either drivers or passengers. Drivers can then see the list of passengers and choose who they want to pick up. Passengers can see the list of drivers and choose who they want to ride with.",
+    "description": "Pool Party is a web application that enables users to connect with others who are traveling to the same destination at the same time. It is designed primarily for mobile devices, but it is also compatible with desktop platforms. The app allows users to create a 'pool' of people who are planning to travel together, and then invite others to join the pool as either drivers or passengers. Drivers can view the list of passengers and select those whom they are willing to pick up, while passengers can see the list of available drivers and choose the one they want to ride with. This helps users coordinate their travel arrangements and share the costs of transportation, making it easier and more convenient to travel together. Pool Party is an useful tool for anyone looking to connect with others and save money on transportation.",
     "code": "UEInrwiA_r8",
     "techStack": ["React", "ExpressJs", "Hop.io"],
     "link": "https://mypoolparty.tech/",
@@ -17,15 +17,15 @@
   },
   {
     "name": "Remote Trainer",
-    "description": "RemoteTrainer allows people to filter and search through the muscle groups they are trying to work out as well as the equipment they have, and after submitting that information, RemoteTrainer will show a list of exercises that the user can use. Moreoever, a gif is provided showing how to perform the exercise, as well as some small details about the exercise. The app will also keep track of the users BMI and body fat as the user keeps updating their information regarding age, height, weight, etc.",
+    "description": "RemoteTrainer is a web-based fitness application designed to help users achieve their fitness goals. It allows users to search for and filter exercises based on the muscle groups they want to target and the equipment they have available. Once the user has submitted this information, the app generates a list of exercises that are suitable for their needs. Each exercise is accompanied by a GIF showing the proper form and technique, as well as additional details about the benefits and challenges of the exercise. In addition to providing a wide range of exercises, RemoteTrainer also helps users track their progress by keeping track of their body mass index (BMI) and body fat percentage. To do this, the app asks users to input their age, height, and weight, and uses this information to calculate their BMI and body fat. With its comprehensive search features and tracking capabilities, RemoteTrainer is a valuable tool for anyone looking to improve their fitness and achieve their goals.",
     "code": "vL-X-1XrIN0",
-    "techStack": ["React", "firebase", "rapidapi"],
+    "techStack": ["React", "Firebase", "RapidApi"],
     "link": "https://remotetrainer.live/",
     "github": "https://github.com/IdkwhatImD0ing/ExerciseTracker"
   },
   {
     "name": "Tetris Coop",
-    "description": "Tetris Duels lets you play Tetris alone or with family and friends. Compete to see who can get the highest score!",
+    "description": "Tetris Duels is a classic puzzle game that allows players to test their skills and strategy against others. In this game, players can choose to play solo or with family and friends in a competitive multiplayer mode. The goal is to score as many points as possible by strategically placing falling blocks called tetrominoes to form lines without any gaps. As the game progresses, the blocks fall faster and become more difficult to manage, requiring quick thinking and precise movements. With its simple gameplay and endless replay value, Tetris Duels is a fun and addictive game for players of all ages.",
     "code": "y8wPmVJEqlc",
     "techStack": ["React", "ExpressJs", "Hop.io"],
     "link": "https://tetrisduels.hop.sh/",
@@ -33,17 +33,17 @@
   },
   {
     "name": "ASL-Transcription",
-    "description": "The lens would automatically convert the letters into text, letting him create content without worrying about writing captions for every single action. Apart from helping transcribe ASL in real time. This lens could also be used as a learning tool for ASL. Real time transcription allows the user to practice speed and accuracy without the need for an interpreter.",
+    "description": "The lens is a useful tool that can be used to transcribe American Sign Language (ASL) in real time. It automatically converts the signed letters into text, allowing the user to easily create written content without the need to manually write captions for every action. In addition to its transcription capabilities, the lens can also be used as a learning tool for ASL. With real-time transcription, the user can practice their speed and accuracy in signing without the need for an interpreter. This can be especially beneficial for those who are learning ASL or for those who are seeking to improve their signing skills.",
     "code": "Nat5vQGsyxA",
-    "techStack": ["javascript", "python", "tensorflow", "keras"],
+    "techStack": ["Javascript", "Python", "Tensorflow", "Keras"],
     "link": "https://lens.snapchat.com/16642dd15be74124ac470c53a82d46fc",
     "github": "https://github.com/IdkwhatImD0ing/ASL-Transcription"
   },
   {
     "name": "Exalt",
-    "description": "Basically a rudimentary clone of the game Realm of the Mad God coded in java.",
+    "description": "This project is a Java-based clone of the popular game Realm of the Mad God. In this game, players are placed in an arena and must face an endless series of waves. The objective is to collect potions to increase their stats and to defeat enemies and find loot. Players can also find and equip a variety of weapons and armor to further increase their chances of survival. ",
     "code": "aaFkC9SpMhk",
-    "techStack": ["java"],
+    "techStack": ["Java"],
     "link": "https://github.com/IdkwhatImD0ing/BulletHellGame/releases/tag/v1.0.1",
     "github": "https://github.com/IdkwhatImD0ing/BulletHellGame"
   }

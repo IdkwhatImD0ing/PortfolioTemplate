@@ -34,6 +34,7 @@ export default function ProjectDisplay() {
                 key={index}
                 name={project.name}
                 description={project.description}
+                techStack={project.techStack}
                 code={project.code}
                 link={project.link}
                 github={project.github}
@@ -45,6 +46,7 @@ export default function ProjectDisplay() {
                 key={index}
                 name={project.name}
                 description={project.description}
+                techStack={project.techStack}
                 code={project.code}
                 link={project.link}
                 github={project.github}
