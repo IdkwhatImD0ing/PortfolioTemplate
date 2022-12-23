@@ -16,6 +16,7 @@ export default function ResumeDisplay() {
 
         position: 'absolute',
         top: '10vh',
+        bottom: '10vh',
         left: 0,
       }}
     >
