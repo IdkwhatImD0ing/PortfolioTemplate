@@ -16,7 +16,6 @@ export default function ResumeDisplay() {
 
         position: 'absolute',
         top: '10vh',
-        bottom: '10vh',
         left: 0,
       }}
     >
@@ -38,6 +37,7 @@ export default function ResumeDisplay() {
           scale={1.5}
         />
       </Document>
+      <Box height="20vh"></Box>
     </Box>
   );
 }
