@@ -1,80 +1,87 @@
 import React from 'react';
-import {Box, Stack, Typography} from '@mui/material';
-import DisplayPaper from './DisplayPaper';
-import TableDisplay from './TableDisplay';
+import {Box, Grid, Stack, Typography} from '@mui/material';
+import {SkillBars} from 'react-skills';
 
 const programmingLanguages = [
-  'C/C++',
-  'Java',
-  'JavaScript',
-  'Python',
-  'Haskell',
-  'Dart',
+  {name: 'JavaScript', level: 100, color: '#8B8000'},
+  {name: 'Python', level: 95, color: 'blue'},
+  {name: 'C/C++', level: 90, color: 'red'},
+  {name: 'Haskell', level: 80, color: 'green'},
+  {name: 'Java', level: 70, color: 'orange'},
+  {name: 'Dart', level: 60, color: 'darkblue'},
 ];
 
-const frameworks = ['React', 'Node.js', 'Express.js', 'Django', 'Flask'];
+const frameworks = [
+  {name: 'React', level: 100, color: 'lightblue'},
+  {name: 'NextJs', level: 90, color: 'gray'},
+  {name: 'Flask', level: 85, color: 'blue'},
+  {name: 'Express.js', level: 80, color: '#8B8000'},
+  {name: 'Node.js', level: 70, color: 'green'},
+];
 
-const databases = ['MongoDB', 'Firebase'];
+const databases = [
+  {name: 'Firebase', level: 95, color: 'orange'},
+  {name: 'PostgreSQL', level: 80, color: 'darkblue'},
+];
 
 const libraries = [
-  'Material-UI',
-  'Tensorflow',
-  'Keras',
-  'Pandas',
-  'NumPy',
-  'Matplotlib',
+  {name: 'Material-UI', level: 100, color: 'lightblue'},
+  {name: 'Tensorflow', level: 90, color: 'orange'},
+  {name: 'Keras', level: 80, color: 'red'},
+  {name: 'Pandas', level: 70, color: 'darkblue'},
+  {name: 'NumPy', level: 70, color: '#8B8000'},
+  {name: 'Matplotlib', level: 60, color: 'green'},
 ];
 
 export default function Display() {
   return (
     <Box
       height="100vh"
-      width="100vw"
+      width="100%"
       sx={{
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
         alignItems: 'center',
 
         position: 'absolute',
         top: 0,
         left: 0,
 
-        overflow: 'hidden',
+        paddingTop: '10vh',
       }}
     >
-      <Typography
-        variant="h3"
-        color="white"
-        sx={{
-          position: 'absolute',
-          top: '10vh',
-        }}
-      >
-        Skills
-      </Typography>
-      <Stack
-        width="100%"
-        spacing={5}
-        direction="row"
-        alignItems="center"
-        justifyContent="space-evenly"
-        sx={{
-          paddingLeft: '10vw',
-          paddingRight: '10vw',
-        }}
-      >
-        <DisplayPaper height="30vh" name="Programming Languages">
-          <TableDisplay fields={programmingLanguages} />
-        </DisplayPaper>
-        <DisplayPaper height="50vh" name="Frameworks">
-          <TableDisplay fields={frameworks} />
-        </DisplayPaper>
-        <DisplayPaper height="50vh" name="Libraries">
-          <TableDisplay fields={libraries} />
-        </DisplayPaper>
-        <DisplayPaper height="30vh" name="Databases">
-          <TableDisplay fields={databases} />
-        </DisplayPaper>
+      <Stack direction="column" width="80%" spacing={5}>
+        <Typography variant="h3" color="white" align="center">
+          Skills
+        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <Typography variant="h6" color="white" align="center">
+              Languages
+            </Typography>
+            <SkillBars skills={programmingLanguages} />
+          </Grid>
+          <Grid item xs={6}>
+            <Typography variant="h6" color="white" align="center">
+              Frameworks
+            </Typography>
+            <SkillBars skills={frameworks} />
+          </Grid>
+          <Grid item xs={6}>
+            <Typography variant="h6" color="white" align="center">
+              Databases
+            </Typography>
+            <SkillBars skills={databases} />
+          </Grid>
+          <Grid item xs={6}>
+            <Typography variant="h6" color="white" align="center">
+              Libraries
+            </Typography>
+            <SkillBars skills={libraries} />
+          </Grid>
+        </Grid>
+        <Box height="10vh" />
       </Stack>
     </Box>
   );

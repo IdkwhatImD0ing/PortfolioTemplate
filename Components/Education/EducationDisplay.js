@@ -8,7 +8,7 @@ export default function EducationDisplay() {
       width="100%"
       sx={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'column',
 
@@ -17,6 +17,7 @@ export default function EducationDisplay() {
         left: 0,
 
         overflow: 'hidden',
+        paddingTop: '10vh',
       }}
     >
       <Typography

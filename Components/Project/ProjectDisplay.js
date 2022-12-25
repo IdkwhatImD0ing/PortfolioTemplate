@@ -12,7 +12,7 @@ export default function ProjectDisplay() {
       width="100%"
       sx={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
 
         position: 'absolute',

@@ -11,12 +11,13 @@ export default function ResumeDisplay() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
 
         position: 'absolute',
-        top: '10vh',
+        top: 0,
         left: 0,
+        paddingTop: '10vh',
       }}
     >
       <Typography
