@@ -51,12 +51,11 @@ export default function Hero() {
             mt: 5,
           }}
         >
-          About I am currently a Third Year Undergrad at the University of
-          California - Santa Cruz. Currently majoring in Computer Science with a
-          focus in Machine Learning and Full-Stack Web Development. I consider
-          myself a Full-Stack Developer with experience in React, NextJs,
-          NodeJs, ExpressJs, Flask, and PostGres. I have considerable experience
-          in Applied Machine Learning through the use of personal projects and
+          I am a Third Year Undergrad at UC Santa Cruz, studying Computer
+          Science with a focus on Machine Learning and Full-Stack Web
+          Development. I am a Full-Stack Developer with experience in React,
+          NextJs, NodeJs, ExpressJs, Flask, and PostGreSQL. I also have
+          experience in Applied Machine Learning through personal projects and
           Kaggle Competitions.
         </Typography>
       </Stack>
