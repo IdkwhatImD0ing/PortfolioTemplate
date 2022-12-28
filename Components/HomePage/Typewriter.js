@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Typewriter from 'typewriter-effect';
+import {useWindowSize} from '../page';
 
 const words = [
   'Full-Stack Developer',
@@ -7,12 +8,13 @@ const words = [
   'Software Engineer',
   'Musician',
   'Back-End Developer',
-  'Developer',
+  'Machine Learning Engineer',
 ];
 
-export default function Typer() {
+export default function Typer(props) {
+  const width = useWindowSize();
   return (
-    <div className="Typewriter">
+    <div className={width > 1000 ? 'Desktop' : 'Mobile'}>
       <Typewriter
         options={{
           strings: words,

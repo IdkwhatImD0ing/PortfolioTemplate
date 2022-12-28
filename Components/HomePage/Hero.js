@@ -1,7 +1,5 @@
 import {Box, Stack, Typography} from '@mui/material';
-import Topbar from '../Topbar';
 import Typer from './Typewriter';
-import Matrix from './Matrix';
 
 export default function Hero() {
   return (
