@@ -28,7 +28,6 @@ export default function HeroMobile() {
         >
           <Typography
             variant="h3"
-            align="center"
             sx={{
               color: 'pink',
             }}

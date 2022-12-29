@@ -15,7 +15,7 @@ export default function Botbar() {
         alignItems: 'center',
 
         position: 'fixed',
-        bottom: 0,
+        bottom: 10,
         left: 0,
       }}
     >
