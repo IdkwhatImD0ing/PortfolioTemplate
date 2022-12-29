@@ -51,6 +51,7 @@ export default function LeftProject(props) {
               boxShadow: '0px 0px 10px #000000',
               padding: '10%',
               backgroundColor: 'rgba(255, 255, 255, 0.375)',
+              borderRadius: 10,
             }}
           >
             <Typography variant="h3" align="center" sx={{mb: 5}}>

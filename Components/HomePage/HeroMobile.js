@@ -85,6 +85,7 @@ export default function HeroMobile() {
           experience in Applied Machine Learning through personal projects and
           Kaggle Competitions.
         </Typography>
+        <Box height="10vh" />
       </Stack>
     </Box>
   );

@@ -1,6 +1,7 @@
 import {Box, Stack, Button} from '@mui/material';
 import {useRouter} from 'next/router';
 import {useScrollY} from '../page';
+import AnimatedButton from './AnimatedButton';
 
 export default function TopbarDesktop() {
   const rounter = useRouter();
@@ -30,42 +31,42 @@ export default function TopbarDesktop() {
         justifyContent="space-evenly"
         spacing={2}
       >
-        <Button
+        <AnimatedButton
           onClick={() => {
             rounter.push('/');
           }}
         >
           Home
-        </Button>
-        <Button
+        </AnimatedButton>
+        <AnimatedButton
           onClick={() => {
             rounter.push('/projects');
           }}
         >
           Projects
-        </Button>
-        <Button
+        </AnimatedButton>
+        <AnimatedButton
           onClick={() => {
             rounter.push('/education');
           }}
         >
           Education
-        </Button>
-        <Button
+        </AnimatedButton>
+        <AnimatedButton
           onClick={() => {
             rounter.push('/skills');
           }}
         >
           Skills
-        </Button>
-        <Button
+        </AnimatedButton>
+        <AnimatedButton
           onClick={() => {
             rounter.push('/resume');
           }}
         >
           Resume
-        </Button>
-        <Button>Awards</Button>
+        </AnimatedButton>
+        <AnimatedButton>Awards</AnimatedButton>
       </Stack>
     </Box>
   );

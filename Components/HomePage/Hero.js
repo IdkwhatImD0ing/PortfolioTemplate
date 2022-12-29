@@ -18,7 +18,7 @@ export default function Hero() {
         overflow: 'hidden',
       }}
     >
-      <Stack maxWidth="60vw" direction="column" alignItems="center">
+      <Stack maxWidth="80vw" direction="column" alignItems="center">
         <Typography
           variant="h5"
           align="center"

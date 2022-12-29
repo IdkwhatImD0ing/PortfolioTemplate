@@ -23,7 +23,7 @@ export default function Botbar() {
         direction="row"
         alignItems="center"
         justifyContent="space-evenly"
-        spacing={2}
+        spacing={3}
       >
         <Link
           href="https://www.linkedin.com/in/bill-zhang-57976b1b3/"
@@ -35,6 +35,27 @@ export default function Botbar() {
             width="30px"
             height="30px"
             alt="LinkedIn Logo"
+            sx={{
+              transform: 'rotate(0deg)',
+              transition: 'transform 0.3s ease',
+
+              '&:hover': {
+                transform: 'rotate(-5deg)',
+                animation: 'wiggle 0.3s ease-in-out infinite',
+              },
+
+              '@keyframes wiggle': {
+                '0%': {
+                  transform: 'rotate(-5deg)',
+                },
+                '50%': {
+                  transform: 'rotate(5deg)',
+                },
+                '100%': {
+                  transform: 'rotate(-5deg)',
+                },
+              },
+            }}
           />
         </Link>
         <Link href="https://github.com/IdkwhatImD0ing/" target="_blank">
@@ -44,6 +65,27 @@ export default function Botbar() {
             width="30px"
             height="30px"
             alt="Github Logo"
+            sx={{
+              transform: 'rotate(0deg)',
+              transition: 'transform 0.3s ease',
+
+              '&:hover': {
+                transform: 'rotate(-5deg)',
+                animation: 'wiggle 0.3s ease-in-out infinite',
+              },
+
+              '@keyframes wiggle': {
+                '0%': {
+                  transform: 'rotate(-5deg)',
+                },
+                '50%': {
+                  transform: 'rotate(5deg)',
+                },
+                '100%': {
+                  transform: 'rotate(-5deg)',
+                },
+              },
+            }}
           />
         </Link>
         <Link href="https://devpost.com/IdkwhatImD0ing/" target="_blank">
@@ -53,6 +95,27 @@ export default function Botbar() {
             width="30px"
             height="30px"
             alt="Devpost Logo"
+            sx={{
+              transform: 'rotate(0deg)',
+              transition: 'transform 0.3s ease',
+
+              '&:hover': {
+                transform: 'rotate(-5deg)',
+                animation: 'wiggle 0.3s ease-in-out infinite',
+              },
+
+              '@keyframes wiggle': {
+                '0%': {
+                  transform: 'rotate(-5deg)',
+                },
+                '50%': {
+                  transform: 'rotate(5deg)',
+                },
+                '100%': {
+                  transform: 'rotate(-5deg)',
+                },
+              },
+            }}  
           />
         </Link>
       </Stack>
