@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Typewriter from 'typewriter-effect';
-import {useWindowSize} from '../page';
+import {WidthContext} from '../page';
 
 const words = [
   'Full-Stack Developer',
@@ -12,7 +12,7 @@ const words = [
 ];
 
 export default function Typer(props) {
-  const width = useWindowSize();
+  const width = useContext(WidthContext);
   return (
     <div className={width > 1000 ? 'Desktop' : 'Mobile'}>
       <Typewriter
