@@ -19,7 +19,7 @@ export default function ProjectMobile(props) {
   }, []);
 
   const opt = {
-    height: `${windowHeight * 0.4}`,
+    height: `${windowHeight * 0.3}`,
     width: `${windowWidth * 0.75}`,
     playerVars: {
       autoplay: 0,
@@ -51,7 +51,7 @@ export default function ProjectMobile(props) {
           borderRadius: 10,
         }}
       >
-        <Typography variant="h3" align="center" sx={{mb: 5}}>
+        <Typography variant="h3" align="center">
           {props.name}
         </Typography>
         {windowHeight && (
@@ -59,16 +59,8 @@ export default function ProjectMobile(props) {
             <YouTube videoId={props.code} opts={opt} />
           </Box>
         )}
-        <Typography
-          variant="h6"
-          sx={{
-            mb: 2,
-          }}
-        >
-          {props.description}
-        </Typography>
-
-        <Typography variant="h6" sx={{mb: 2, fontWeight: 'bold'}}>
+        <Typography variant="h6">{props.description}</Typography>
+        <Typography variant="h6" sx={{fontWeight: 'bold'}}>
           Technologies Used:
         </Typography>
         <Grid
@@ -77,8 +69,8 @@ export default function ProjectMobile(props) {
           justifyContent="center"
           alignItems="center"
         >
-          {props.techStack.map((tech) => (
-            <Grid item xs={6}>
+          {props.techStack.map((tech, index) => (
+            <Grid item xs={6} key={'gitem' + index}>
               <Typography variant="h6" align="center" sx={{mb: 2}}>
                 {tech}
               </Typography>
@@ -90,9 +82,6 @@ export default function ProjectMobile(props) {
           spacing={2}
           justifyContent="center"
           alignItems="center"
-          sx={{
-            mb: 2,
-          }}
         >
           <Button
             variant="contained"
