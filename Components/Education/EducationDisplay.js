@@ -64,6 +64,26 @@ export default function EducationDisplay() {
             width="200px"
             height="200px"
             alt="lynbrook logo"
+            sx={{
+              transition: 'transform 0.3s ease',
+              perspective: '1000px',
+              '&:hover': {
+                animation: 'flip 5s ease-in-out infinite',
+              },
+
+              '@keyframes flip': {
+                '0%': {
+                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                },
+                '50%': {
+                  transform:
+                    'rotateX(-180deg) rotateY(-180deg) rotateZ(-180deg)',
+                },
+                '100%': {
+                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                },
+              },
+            }}
           />
           <Typography color="white" variant="h4" align="center">
             Lynbrook High School
@@ -85,6 +105,25 @@ export default function EducationDisplay() {
             width="200px"
             height="200px"
             alt="ucsc logo"
+            sx={{
+              transition: 'transform 0.3s ease',
+              perspective: '1000px',
+              '&:hover': {
+                animation: 'flip 5s ease-in-out infinite',
+              },
+
+              '@keyframes flip': {
+                '0%': {
+                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                },
+                '50%': {
+                  transform: 'rotateX(180deg) rotateY(-180deg) rotateZ(180deg)',
+                },
+                '100%': {
+                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                },
+              },
+            }}
           />
           <Typography color="white" variant="h4" align="center">
             University of California: Santa Cruz

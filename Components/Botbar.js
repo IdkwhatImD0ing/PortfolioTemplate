@@ -36,23 +36,24 @@ export default function Botbar() {
             height="30px"
             alt="LinkedIn Logo"
             sx={{
+              borderRadius: '50%',
               transform: 'rotate(0deg)',
               transition: 'transform 0.3s ease',
 
               '&:hover': {
-                transform: 'rotate(-5deg)',
+                transform: 'rotate(-10deg)',
                 animation: 'wiggle 0.3s ease-in-out infinite',
               },
 
               '@keyframes wiggle': {
                 '0%': {
-                  transform: 'rotate(-5deg)',
+                  transform: 'rotate(-10deg)',
                 },
                 '50%': {
-                  transform: 'rotate(5deg)',
+                  transform: 'rotate(10deg)',
                 },
                 '100%': {
-                  transform: 'rotate(-5deg)',
+                  transform: 'rotate(-10deg)',
                 },
               },
             }}
@@ -70,19 +71,19 @@ export default function Botbar() {
               transition: 'transform 0.3s ease',
 
               '&:hover': {
-                transform: 'rotate(-5deg)',
+                transform: 'rotate(-10deg)',
                 animation: 'wiggle 0.3s ease-in-out infinite',
               },
 
               '@keyframes wiggle': {
                 '0%': {
-                  transform: 'rotate(-5deg)',
+                  transform: 'rotate(-10deg)',
                 },
                 '50%': {
-                  transform: 'rotate(5deg)',
+                  transform: 'rotate(10deg)',
                 },
                 '100%': {
-                  transform: 'rotate(-5deg)',
+                  transform: 'rotate(-10deg)',
                 },
               },
             }}
@@ -100,22 +101,22 @@ export default function Botbar() {
               transition: 'transform 0.3s ease',
 
               '&:hover': {
-                transform: 'rotate(-5deg)',
+                transform: 'rotate(-10deg)',
                 animation: 'wiggle 0.3s ease-in-out infinite',
               },
 
               '@keyframes wiggle': {
                 '0%': {
-                  transform: 'rotate(-5deg)',
+                  transform: 'rotate(-10deg)',
                 },
                 '50%': {
-                  transform: 'rotate(5deg)',
+                  transform: 'rotate(10deg)',
                 },
                 '100%': {
-                  transform: 'rotate(-5deg)',
+                  transform: 'rotate(-10deg)',
                 },
               },
-            }}  
+            }}
           />
         </Link>
       </Stack>

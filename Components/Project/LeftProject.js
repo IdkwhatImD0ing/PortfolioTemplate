@@ -52,6 +52,12 @@ export default function LeftProject(props) {
               padding: '10%',
               backgroundColor: 'rgba(255, 255, 255, 0.375)',
               borderRadius: 10,
+              transform: 'scale(1)',
+              transition: 'transform 0.5s',
+
+              '&:hover': {
+                transform: 'scale(1.05)',
+              },
             }}
           >
             <Typography variant="h3" align="center" sx={{mb: 5}}>
@@ -66,7 +72,7 @@ export default function LeftProject(props) {
               {props.description}
             </Typography>
             <Stack direction="row" spacing={2}>
-              <Typography variant="h6" sx={{mb: 2}}>
+              <Typography variant="h6" sx={{mb: 2, fontWeight: 'bold'}}>
                 Technologies Used:
               </Typography>
               {props.techStack.map((tech) => (
