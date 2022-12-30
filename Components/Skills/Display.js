@@ -56,25 +56,25 @@ export default function Display() {
           Skills
         </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={6}>
+          <Grid item md={6} xs={12}>
             <Typography variant="h6" color="white" align="center">
               Languages
             </Typography>
             <SkillBars skills={programmingLanguages} />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item md={6} xs={12}>
             <Typography variant="h6" color="white" align="center">
               Frameworks
             </Typography>
             <SkillBars skills={frameworks} />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item md={6} xs={12}>
             <Typography variant="h6" color="white" align="center">
               Databases
             </Typography>
             <SkillBars skills={databases} />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item md={6} xs={12}>
             <Typography variant="h6" color="white" align="center">
               Libraries
             </Typography>
