@@ -1,5 +1,5 @@
 import {Box, Typography, Button} from '@mui/material';
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
 import workerSrc from '../pdf-worker';
 import {WidthContext} from './page';
@@ -7,6 +7,7 @@ import {WidthContext} from './page';
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 export default function ResumeDisplay() {
   const width = useContext(WidthContext);
+  const [loading, setLoading] = useState(true);
 
   const onClick = () => {
     // Downloads the pdf
@@ -41,38 +42,53 @@ export default function ResumeDisplay() {
       >
         Resume
       </Typography>
-      <Button
-        variant="contained"
-        onClick={() => {
-          onClick();
-        }}
-        sx={{
-          mb: '5vh',
-        }}
+      {!loading && (
+        <Button
+          variant="contained"
+          onClick={() => {
+            onClick();
+          }}
+          sx={{
+            mb: '5vh',
+          }}
+        >
+          Download
+        </Button>
+      )}
+      <Document
+        file={'./resume.pdf'}
+        renderMode="canvas"
+        loading={
+          <Box>
+            <div className="Loader" />
+          </Box>
+        }
       >
-        Download
-      </Button>
-      <Document file={'./resume.pdf'} renderMode="canvas">
         <Page
           key="page1"
           pageNumber={1}
           renderAnnotationLayer={false}
           renderTextLayer={false}
           width={width * 0.8}
+          onRenderSuccess={() => {
+            setLoading(false);
+          }}
         />
       </Document>
       <Box height="5vh"></Box>
-      <Button
-        variant="contained"
-        onClick={() => {
-          onClick();
-        }}
-        sx={{
-          mb: '20vh',
-        }}
-      >
-        Download
-      </Button>
+      {!loading && (
+        <Button
+          variant="contained"
+          onClick={() => {
+            onClick();
+          }}
+          sx={{
+            mb: '20vh',
+          }}
+        >
+          Download
+        </Button>
+      )}
     </Box>
   );
 }
