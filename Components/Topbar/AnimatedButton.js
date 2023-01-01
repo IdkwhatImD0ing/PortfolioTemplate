@@ -3,6 +3,7 @@ import {Button} from '@mui/material';
 export default function AnimatedButton(props) {
   return (
     <Button
+      disableRipple
       onClick={props.onClick}
       sx={{
         ':after': {

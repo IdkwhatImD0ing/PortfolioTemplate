@@ -8,7 +8,7 @@ export default function Botbar() {
   return (
     <Box
       height="5vh"
-      width="100vw"
+      width="100%"
       sx={{
         display: 'flex',
         justifyContent: 'center',

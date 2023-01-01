@@ -1,10 +1,22 @@
-import {Box, Typography} from '@mui/material';
-import React from 'react';
+import {Box, Typography, Button} from '@mui/material';
+import React, {useContext} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
 import workerSrc from '../pdf-worker';
+import {WidthContext} from './page';
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 export default function ResumeDisplay() {
+  const width = useContext(WidthContext);
+
+  const onClick = () => {
+    // Downloads the pdf
+    const fileName = 'resume.pdf';
+    const a = document.createElement('a');
+    a.href = '/resume.pdf';
+    a.download = fileName;
+    a.click();
+  };
+
   return (
     <Box
       width="100%"
@@ -24,21 +36,43 @@ export default function ResumeDisplay() {
         variant="h3"
         color="white"
         sx={{
-          mb: '10vh',
+          mb: '5vh',
         }}
       >
         Resume
       </Typography>
+      <Button
+        variant="contained"
+        onClick={() => {
+          onClick();
+        }}
+        sx={{
+          mb: '5vh',
+        }}
+      >
+        Download
+      </Button>
       <Document file={'./resume.pdf'} renderMode="canvas">
         <Page
           key="page1"
           pageNumber={1}
           renderAnnotationLayer={false}
           renderTextLayer={false}
-          scale={1.5}
+          width={width * 0.8}
         />
       </Document>
-      <Box height="20vh"></Box>
+      <Box height="5vh"></Box>
+      <Button
+        variant="contained"
+        onClick={() => {
+          onClick();
+        }}
+        sx={{
+          mb: '20vh',
+        }}
+      >
+        Download
+      </Button>
     </Box>
   );
 }

@@ -69,6 +69,7 @@ export default function TopbarMobile() {
           <Typography variant="h4">Menu</Typography>
           <Divider />
           <Button
+            disableRipple
             onClick={() => {
               handleClose();
               rounter.push('/');
@@ -77,6 +78,7 @@ export default function TopbarMobile() {
             Home
           </Button>
           <Button
+            disableRipple
             onClick={() => {
               handleClose();
               rounter.push('/projects');
@@ -85,6 +87,7 @@ export default function TopbarMobile() {
             Projects
           </Button>
           <Button
+            disableRipple
             onClick={() => {
               handleClose();
               rounter.push('/education');
@@ -93,6 +96,7 @@ export default function TopbarMobile() {
             Education
           </Button>
           <Button
+            disableRipple
             onClick={() => {
               handleClose();
               rounter.push('/skills');
@@ -101,6 +105,7 @@ export default function TopbarMobile() {
             Skills
           </Button>
           <Button
+            disableRipple
             onClick={() => {
               handleClose();
               rounter.push('/resume');
