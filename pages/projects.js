@@ -12,7 +12,7 @@ export default function Projects() {
         <title>Projects</title>
         <link rel="icon" href="/icon.ico" />
       </Head>
-      {width > 1000 ? <ProjectDisplay /> : <ProjectDisplayMobile />}
+      {width > 800 ? <ProjectDisplay /> : <ProjectDisplayMobile />}
     </>
   );
 }
