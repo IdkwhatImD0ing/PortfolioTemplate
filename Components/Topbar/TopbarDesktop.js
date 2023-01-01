@@ -8,7 +8,7 @@ export default function TopbarDesktop() {
   const scrollY = useScrollY();
   return (
     <Box
-      height="10vh"
+      height="5vh"
       width="100vw"
       sx={{
         display: 'flex',
