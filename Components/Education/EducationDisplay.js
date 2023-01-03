@@ -4,7 +4,7 @@ import {Box, Stack, Typography} from '@mui/material';
 export default function EducationDisplay() {
   return (
     <Box
-      height="100%"
+      height="90vh"
       width="100%"
       sx={{
         display: 'flex',
