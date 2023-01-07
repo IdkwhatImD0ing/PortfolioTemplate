@@ -51,7 +51,13 @@ export default function Display() {
         paddingTop: '10vh',
       }}
     >
-      <Stack direction="column" width="80%" spacing={5}>
+      <Stack
+        direction="column"
+        width="80%"
+        spacing={5}
+        justifyContent="flex-start"
+        alignItems="center"
+      >
         <Typography variant="h3" color="white" align="center">
           Skills
         </Typography>
