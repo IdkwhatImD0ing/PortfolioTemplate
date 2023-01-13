@@ -69,7 +69,7 @@ export default function ResumeDisplay() {
           pageNumber={1}
           renderAnnotationLayer={false}
           renderTextLayer={false}
-          width={width * 0.8}
+          width={width < 1000 ? width * 0.8 : 900}
           onRenderSuccess={() => {
             setLoading(false);
           }}

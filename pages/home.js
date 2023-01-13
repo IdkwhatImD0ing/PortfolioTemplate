@@ -15,7 +15,7 @@ export default function HomePage() {
         <title>Home</title>
         <link rel="icon" href="/icon.ico" />
       </Head>
-      {width > 1000 ? <Hero /> : <HeroMobile />}
+      {width > 800 ? <Hero /> : <HeroMobile />}
     </>
   );
 }
