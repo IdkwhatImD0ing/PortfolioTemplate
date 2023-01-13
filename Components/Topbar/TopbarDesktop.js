@@ -30,6 +30,9 @@ export default function TopbarDesktop() {
         alignItems="center"
         justifyContent="space-evenly"
         spacing={2}
+        sx={{
+          paddingTop: 2,
+        }}
       >
         <AnimatedButton
           onClick={() => {
