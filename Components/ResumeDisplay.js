@@ -6,7 +6,7 @@ import {WidthContext} from './page';
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 export default function ResumeDisplay() {
-  const width = useContext(WidthContext);
+  const width = structuredClone(useContext(WidthContext));
   const [loading, setLoading] = useState(true);
 
   const onClick = () => {
