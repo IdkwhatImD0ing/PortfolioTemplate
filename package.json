@@ -25,6 +25,7 @@
     "react-pdf": "^6.2.0",
     "react-scroll-motion": "^0.3.0",
     "react-skills": "^1.27.0",
+    "react-spring": "^9.6.1",
     "react-youtube": "^10.0.0",
     "sass": "^1.56.1",
     "typewriter-effect": "^2.19.0"
