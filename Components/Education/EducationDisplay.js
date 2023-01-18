@@ -1,10 +1,9 @@
 import React from 'react';
-import {Box, Stack, Typography} from '@mui/material';
+import {Box, Grid, Stack, Typography} from '@mui/material';
 
 export default function EducationDisplay() {
   return (
     <Box
-      height="90vh"
       width="100%"
       sx={{
         display: 'flex',
@@ -45,94 +44,96 @@ export default function EducationDisplay() {
       >
         Areas of Focus: Full-Stack Web Dev, Machine Learning
       </Typography>
-      <Stack
-        maxHeight="60%"
-        direction="row"
-        justifyContent="space-around"
-        spacing="20%"
-      >
-        <Stack
-          width="30%"
-          direction="column"
-          alignItems="center"
-          justifyContent="flex-start"
-          spacing={2}
-        >
-          <Box
-            component="img"
-            src="/lynbrook.png"
-            width="200px"
-            height="200px"
-            alt="lynbrook logo"
-            sx={{
-              transition: 'transform 0.3s ease',
-              perspective: '1000px',
-              '&:hover': {
-                animation: 'flip 5s ease-in-out infinite',
-              },
+      <Grid container spacing={2} width="80%">
+        <Grid item md={6} xs={12}>
+          <Stack
+            direction="column"
+            alignItems="center"
+            justifyContent="flex-start"
+            spacing={2}
+          >
+            <Box
+              component="img"
+              src="/lynbrook.png"
+              width="200px"
+              height="200px"
+              alt="lynbrook logo"
+              sx={{
+                transition: 'transform 0.3s ease',
+                perspective: '1000px',
+                '&:hover': {
+                  animation: 'flip 5s ease-in-out infinite',
+                },
 
-              '@keyframes flip': {
-                '0%': {
-                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                '@keyframes flip': {
+                  '0%': {
+                    transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                  },
+                  '50%': {
+                    transform:
+                      'rotateX(-180deg) rotateY(-180deg) rotateZ(-180deg)',
+                  },
+                  '100%': {
+                    transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                  },
                 },
-                '50%': {
-                  transform:
-                    'rotateX(-180deg) rotateY(-180deg) rotateZ(-180deg)',
+              }}
+            />
+            <Typography color="white" variant="h4" align="center">
+              Lynbrook High School
+            </Typography>
+            <Typography color="white" align="center">
+              Dates: 2016-2020
+            </Typography>
+          </Stack>
+        </Grid>
+        <Grid item md={6} xs={12}>
+          <Stack
+            direction="column"
+            alignItems="center"
+            justifyContent="flex-start"
+            spacing={2}
+          >
+            <Box
+              component="img"
+              src="/ucsc.png"
+              width="200px"
+              height="200px"
+              alt="ucsc logo"
+              sx={{
+                transition: 'transform 0.3s ease',
+                perspective: '1000px',
+                '&:hover': {
+                  animation: 'flip 5s ease-in-out infinite',
                 },
-                '100%': {
-                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
-                },
-              },
-            }}
-          />
-          <Typography color="white" variant="h4" align="center">
-            Lynbrook High School
-          </Typography>
-          <Typography color="white" align="center">
-            Dates: 2016-2020
-          </Typography>
-        </Stack>
-        <Stack
-          width="30%"
-          direction="column"
-          alignItems="center"
-          justifyContent="flex-start"
-          spacing={2}
-        >
-          <Box
-            component="img"
-            src="/ucsc.png"
-            width="200px"
-            height="200px"
-            alt="ucsc logo"
-            sx={{
-              transition: 'transform 0.3s ease',
-              perspective: '1000px',
-              '&:hover': {
-                animation: 'flip 5s ease-in-out infinite',
-              },
 
-              '@keyframes flip': {
-                '0%': {
-                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                '@keyframes flip': {
+                  '0%': {
+                    transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                  },
+                  '50%': {
+                    transform:
+                      'rotateX(180deg) rotateY(-180deg) rotateZ(180deg)',
+                  },
+                  '100%': {
+                    transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                  },
                 },
-                '50%': {
-                  transform: 'rotateX(180deg) rotateY(-180deg) rotateZ(180deg)',
-                },
-                '100%': {
-                  transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
-                },
-              },
-            }}
-          />
-          <Typography color="white" variant="h4" align="center">
-            University of California: Santa Cruz
-          </Typography>
-          <Typography color="white" align="center">
-            Dates: 2020-2023
-          </Typography>
-        </Stack>
-      </Stack>
+              }}
+            />
+            <Typography color="white" variant="h4" align="center">
+              University of California
+            </Typography>
+            <Typography color="white" variant="h5" align="center">
+              Santa Cruz
+            </Typography>
+            <Typography color="white" align="center">
+              Dates: 2020-2023
+            </Typography>
+          </Stack>
+        </Grid>
+      </Grid>
+      <Box height="10vh" />
     </Box>
   );
 }

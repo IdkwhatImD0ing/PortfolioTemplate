@@ -53,7 +53,7 @@ export default function LeftProject(props) {
               backgroundColor: 'rgba(255, 255, 255, 0.375)',
               borderRadius: 10,
               transform: 'scale(1)',
-              transition: 'transform 0.5s',
+              transition: 'transform 0.5s', 
 
               '&:hover': {
                 transform: 'scale(1.05)',
