@@ -1,6 +1,7 @@
 import React from 'react';
 import {Box, Grid, Stack, Typography} from '@mui/material';
 import {SkillBars} from 'react-skills';
+import {animated, useSpring} from 'react-spring';
 
 const programmingLanguages = [
   {name: 'JavaScript', level: 100, color: '#8B8000'},
@@ -34,6 +35,18 @@ const libraries = [
 ];
 
 export default function Display() {
+  const fadeIn = useSpring({
+    from: {opacity: 0},
+    to: {opacity: 1},
+  });
+  const fadeTop = useSpring({
+    from: {opacity: 0, top: -100},
+    to: {opacity: 1, top: 0},
+  });
+  const fadeBottom = useSpring({
+    from: {opacity: 0, bottom: -100},
+    to: {opacity: 1, bottom: 0},
+  });
   return (
     <Box
       height="90vh"
@@ -58,33 +71,46 @@ export default function Display() {
         justifyContent="flex-start"
         alignItems="center"
       >
-        <Typography variant="h3" color="white" align="center">
-          Skills
-        </Typography>
+        <animated.div style={{...fadeIn}}>
+          <Typography variant="h3" color="white" align="center">
+            Skills
+          </Typography>
+        </animated.div>
         <Grid container spacing={2}>
           <Grid item md={6} xs={12}>
-            <Typography variant="h6" color="white" align="center">
-              Languages
-            </Typography>
-            <SkillBars skills={programmingLanguages} />
+            <animated.div style={{...fadeTop}}>
+              <Typography variant="h6" color="white" align="center">
+                Languages
+              </Typography>
+              <SkillBars skills={programmingLanguages} />
+            </animated.div>
           </Grid>
+
           <Grid item md={6} xs={12}>
-            <Typography variant="h6" color="white" align="center">
-              Frameworks
-            </Typography>
-            <SkillBars skills={frameworks} />
+            <animated.div style={{...fadeTop}}>
+              <Typography variant="h6" color="white" align="center">
+                Frameworks
+              </Typography>
+              <SkillBars skills={frameworks} />
+            </animated.div>
           </Grid>
+
           <Grid item md={6} xs={12}>
-            <Typography variant="h6" color="white" align="center">
-              Databases
-            </Typography>
-            <SkillBars skills={databases} />
+            <animated.div style={{...fadeBottom}}>
+              <Typography variant="h6" color="white" align="center">
+                Databases
+              </Typography>
+              <SkillBars skills={databases} />
+            </animated.div>
           </Grid>
+
           <Grid item md={6} xs={12}>
-            <Typography variant="h6" color="white" align="center">
-              Libraries
-            </Typography>
-            <SkillBars skills={libraries} />
+            <animated.div style={{...fadeBottom}}>
+              <Typography variant="h6" color="white" align="center">
+                Libraries
+              </Typography>
+              <SkillBars skills={libraries} />
+            </animated.div>
           </Grid>
         </Grid>
         <Box height="10vh" />

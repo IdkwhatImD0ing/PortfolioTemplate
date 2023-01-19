@@ -3,11 +3,17 @@ import React, {useContext, useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
 import workerSrc from '../pdf-worker';
 import {WidthContext} from './page';
+import {animated, useSpring} from 'react-spring';
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 export default function ResumeDisplay() {
   const width = structuredClone(useContext(WidthContext));
   const [loading, setLoading] = useState(true);
+
+  const fadeIn = useSpring({
+    from: {opacity: 0},
+    to: {opacity: 1},
+  });
 
   const onClick = () => {
     // Downloads the pdf
@@ -33,15 +39,17 @@ export default function ResumeDisplay() {
         paddingTop: '10vh',
       }}
     >
-      <Typography
-        variant="h3"
-        color="white"
-        sx={{
-          mb: '5vh',
-        }}
-      >
-        Resume
-      </Typography>
+      <animated.div style={{...fadeIn}}>
+        <Typography
+          variant="h3"
+          color="white"
+          sx={{
+            mb: '5vh',
+          }}
+        >
+          Resume
+        </Typography>
+      </animated.div>
       {!loading && (
         <Button
           variant="contained"

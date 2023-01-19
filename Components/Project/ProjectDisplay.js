@@ -3,10 +3,14 @@ import React from 'react';
 import {Box, Stack, Typography} from '@mui/material';
 import RightProject from './RightProject';
 import LeftProject from './LeftProject';
-
+import {animated, useSpring} from '@react-spring/web';
 import Projects from './projects';
 
 export default function ProjectDisplay() {
+  const fadeIn = useSpring({
+    from: {opacity: 0},
+    to: {opacity: 1},
+  });
   return (
     <Box
       width="100%"
@@ -24,9 +28,11 @@ export default function ProjectDisplay() {
       }}
     >
       <Stack direction="column" width="100%" spacing={10} sx={{}}>
-        <Typography variant="h3" align="center" color="white">
-          Personal Projects
-        </Typography>
+        <animated.div style={{...fadeIn}}>
+          <Typography variant="h3" align="center" color="white">
+            Personal Projects
+          </Typography>
+        </animated.div>
         {Projects.map((project, index) => {
           if (index % 2 == 0) {
             return (
