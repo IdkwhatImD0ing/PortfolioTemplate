@@ -17,6 +17,11 @@ export default function EducationDisplay() {
     from: {x: 300, opacity: 0},
     to: {x: 0, opacity: 1},
   });
+
+  const zoomUp = useSpring({
+    from: {y: 300, opacity: 0},
+    to: {y: 0, opacity: 1},
+  });
   return (
     <Box
       width="100%"
@@ -57,6 +62,7 @@ export default function EducationDisplay() {
       </animated.div>
       <animated.div style={{...zoomRight}}>
         <Typography
+          align="center"
           color="white"
           sx={{
             mb: 10,
@@ -67,7 +73,7 @@ export default function EducationDisplay() {
       </animated.div>
       <Grid container spacing={2} width="80%">
         <Grid item md={6} xs={12}>
-          <animated.div style={{...fadeIn}}>
+          <animated.div style={{...zoomUp}}>
             <Stack
               direction="column"
               alignItems="center"
@@ -111,7 +117,7 @@ export default function EducationDisplay() {
           </animated.div>
         </Grid>
         <Grid item md={6} xs={12}>
-          <animated.div style={{...fadeIn}}>
+          <animated.div style={{...zoomUp}}>
             <Stack
               direction="column"
               alignItems="center"
