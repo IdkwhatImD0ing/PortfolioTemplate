@@ -36,8 +36,8 @@ const libraries = [
 
 export default function Display() {
   const fadeIn = useSpring({
-    from: {opacity: 0},
-    to: {opacity: 1},
+    from: {y: -100, opacity: 0},
+    to: {y: 0, opacity: 1},
   });
   const fadeTop = useSpring({
     from: {opacity: 0, top: -100},
@@ -47,6 +47,31 @@ export default function Display() {
     from: {opacity: 0, bottom: -100},
     to: {opacity: 1, bottom: 0},
   });
+
+  const left = useSpring({
+    from: {x: -300, opacity: 0},
+    to: {x: 0, opacity: 1},
+    delay: 250,
+  });
+
+  const top = useSpring({
+    from: {y: -300, opacity: 0},
+    to: {y: 0, opacity: 1},
+    delay: 500,
+  });
+
+  const right = useSpring({
+    from: {x: 300, opacity: 0},
+    to: {x: 0, opacity: 1},
+    delay: 750,
+  });
+
+  const bottom = useSpring({
+    from: {y: 300, opacity: 0},
+    to: {y: 0, opacity: 1},
+    delay: 1000,
+  });
+
   return (
     <Box
       height="90vh"
@@ -78,7 +103,7 @@ export default function Display() {
         </animated.div>
         <Grid container spacing={2}>
           <Grid item md={6} xs={12}>
-            <animated.div style={{...fadeTop}}>
+            <animated.div style={{...left}}>
               <Typography variant="h6" color="white" align="center">
                 Languages
               </Typography>
@@ -87,7 +112,7 @@ export default function Display() {
           </Grid>
 
           <Grid item md={6} xs={12}>
-            <animated.div style={{...fadeTop}}>
+            <animated.div style={{...top}}>
               <Typography variant="h6" color="white" align="center">
                 Frameworks
               </Typography>
@@ -96,7 +121,7 @@ export default function Display() {
           </Grid>
 
           <Grid item md={6} xs={12}>
-            <animated.div style={{...fadeBottom}}>
+            <animated.div style={{...bottom}}>
               <Typography variant="h6" color="white" align="center">
                 Databases
               </Typography>
@@ -105,7 +130,7 @@ export default function Display() {
           </Grid>
 
           <Grid item md={6} xs={12}>
-            <animated.div style={{...fadeBottom}}>
+            <animated.div style={{...right}}>
               <Typography variant="h6" color="white" align="center">
                 Libraries
               </Typography>

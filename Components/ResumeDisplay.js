@@ -11,8 +11,14 @@ export default function ResumeDisplay() {
   const [loading, setLoading] = useState(true);
 
   const fadeIn = useSpring({
+    from: {y: -100, opacity: 0},
+    to: {y: 0, opacity: 1},
+  });
+
+  const fade = useSpring({
     from: {opacity: 0},
     to: {opacity: 1},
+    delay: 500,
   });
 
   const onClick = () => {
@@ -51,17 +57,19 @@ export default function ResumeDisplay() {
         </Typography>
       </animated.div>
       {!loading && (
-        <Button
-          variant="contained"
-          onClick={() => {
-            onClick();
-          }}
-          sx={{
-            mb: '5vh',
-          }}
-        >
-          Download
-        </Button>
+        <animated.div style={{...fade}}>
+          <Button
+            variant="contained"
+            onClick={() => {
+              onClick();
+            }}
+            sx={{
+              mb: '5vh',
+            }}
+          >
+            Download
+          </Button>
+        </animated.div>
       )}
       <Document
         file={'./resume.pdf'}
@@ -85,17 +93,19 @@ export default function ResumeDisplay() {
       </Document>
       <Box height="5vh"></Box>
       {!loading && (
-        <Button
-          variant="contained"
-          onClick={() => {
-            onClick();
-          }}
-          sx={{
-            mb: '20vh',
-          }}
-        >
-          Download
-        </Button>
+        <animated.div style={{...fade}}>
+          <Button
+            variant="contained"
+            onClick={() => {
+              onClick();
+            }}
+            sx={{
+              mb: '20vh',
+            }}
+          >
+            Download
+          </Button>
+        </animated.div>
       )}
     </Box>
   );

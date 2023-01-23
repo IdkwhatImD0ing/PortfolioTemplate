@@ -4,8 +4,8 @@ import {animated, useSpring} from 'react-spring';
 
 export default function EducationDisplay() {
   const fadeIn = useSpring({
-    from: {opacity: 0},
-    to: {opacity: 1},
+    from: {y: -100, opacity: 0},
+    to: {y: 0, opacity: 1},
   });
 
   const zoomLeft = useSpring({
@@ -22,6 +22,19 @@ export default function EducationDisplay() {
     from: {y: 300, opacity: 0},
     to: {y: 0, opacity: 1},
   });
+
+  const zoomUp1 = useSpring({
+    from: {y: 300, opacity: 0},
+    to: {y: 0, opacity: 1},
+    delay: 250,
+  });
+
+  const zoomUp2 = useSpring({
+    from: {y: 300, opacity: 0},
+    to: {y: 0, opacity: 1},
+    delay: 500,
+  });
+
   return (
     <Box
       width="100%"
@@ -73,13 +86,13 @@ export default function EducationDisplay() {
       </animated.div>
       <Grid container spacing={2} width="80%">
         <Grid item md={6} xs={12}>
-          <animated.div style={{...zoomUp}}>
-            <Stack
-              direction="column"
-              alignItems="center"
-              justifyContent="flex-start"
-              spacing={2}
-            >
+          <Stack
+            direction="column"
+            alignItems="center"
+            justifyContent="flex-start"
+            spacing={2}
+          >
+            <animated.div style={{...zoomUp}}>
               <Box
                 component="img"
                 src="/lynbrook.png"
@@ -107,23 +120,27 @@ export default function EducationDisplay() {
                   },
                 }}
               />
+            </animated.div>
+            <animated.div style={{...zoomUp1}}>
               <Typography color="white" variant="h4" align="center">
                 Lynbrook High School
               </Typography>
+            </animated.div>
+            <animated.div style={{...zoomUp2}}>
               <Typography color="white" align="center">
                 Dates: 2016-2020
               </Typography>
-            </Stack>
-          </animated.div>
+            </animated.div>
+          </Stack>
         </Grid>
         <Grid item md={6} xs={12}>
-          <animated.div style={{...zoomUp}}>
-            <Stack
-              direction="column"
-              alignItems="center"
-              justifyContent="flex-start"
-              spacing={2}
-            >
+          <Stack
+            direction="column"
+            alignItems="center"
+            justifyContent="flex-start"
+            spacing={2}
+          >
+            <animated.div style={{...zoomUp}}>
               <Box
                 component="img"
                 src="/ucsc.png"
@@ -151,17 +168,21 @@ export default function EducationDisplay() {
                   },
                 }}
               />
+            </animated.div>
+            <animated.div style={{...zoomUp1}}>
               <Typography color="white" variant="h4" align="center">
                 University of California
               </Typography>
+            </animated.div>
+            <animated.div style={{...zoomUp2}}>
               <Typography color="white" variant="h5" align="center">
                 Santa Cruz
               </Typography>
               <Typography color="white" align="center">
                 Dates: 2020-2023
               </Typography>
-            </Stack>
-          </animated.div>
+            </animated.div>
+          </Stack>
         </Grid>
       </Grid>
       <Box height="10vh" />

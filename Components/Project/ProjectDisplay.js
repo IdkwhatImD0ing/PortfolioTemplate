@@ -8,8 +8,8 @@ import Projects from './projects';
 
 export default function ProjectDisplay() {
   const fadeIn = useSpring({
-    from: {opacity: 0},
-    to: {opacity: 1},
+    from: {y: -100, opacity: 0},
+    to: {y: 0, opacity: 1},
   });
   return (
     <Box

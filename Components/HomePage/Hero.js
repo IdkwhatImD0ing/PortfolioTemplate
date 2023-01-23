@@ -3,13 +3,21 @@ import Typer from './Typewriter';
 import {animated, useSpring} from '@react-spring/web';
 
 export default function Hero() {
+  const topFirst = useSpring({
+    from: {y: -100, opacity: 0},
+    to: {y: 0, opacity: 1},
+    delay: 0,
+  });
+
   const top = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
+    delay: 250,
   });
   const bot = useSpring({
-    from: {y: 100, opacity: 0},
+    from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
+    delay: 500,
   });
   return (
     <Box
@@ -28,11 +36,7 @@ export default function Hero() {
       }}
     >
       <Stack maxWidth="80vw" direction="column" alignItems="center">
-        <animated.div
-          style={{
-            ...top,
-          }}
-        >
+        <animated.div style={{...topFirst}}>
           <Typography
             variant="h5"
             align="center"
