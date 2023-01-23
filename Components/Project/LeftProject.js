@@ -1,21 +1,33 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import {Box, Button, Grid, Stack, Typography} from '@mui/material';
 import YouTube from 'react-youtube';
 import {animated, useSpring} from '@react-spring/web';
+import {useIntersectionObserver} from '../page';
 
 export default function LeftProject(props) {
   // Window height and width tracker
   const [windowHeight, setWindowHeight] = useState(0);
   const [windowWidth, setWindowWidth] = useState(0);
+  const triggerRef = useRef();
+  const dataRef = useIntersectionObserver(triggerRef, {
+    freezeOnceVisible: false,
+  });
 
   const fadeLeft = useSpring({
     from: {x: -100, opacity: 0},
-    to: {x: 0, opacity: 1},
+    to: {
+      x: dataRef?.isIntersecting ? 0 : -100,
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+    },
   });
 
   const fadeRight = useSpring({
     from: {x: 100, opacity: 0},
-    to: {x: 0, opacity: 1},
+
+    to: {
+      x: dataRef?.isIntersecting ? 0 : 100,
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+    },
   });
 
   // Update window height and width
@@ -39,11 +51,12 @@ export default function LeftProject(props) {
 
   return (
     <Grid container direction="row" alignItems="center" justifyContent="center">
+      <div ref={triggerRef} />
       {windowHeight && (
         <Grid item xs={6}>
           <animated.div style={{...fadeLeft}}>
             <Box alignItems="center" padding="5%">
-              <YouTube videoId={props.code} opts={opt} />
+              <YouTube videoId={props.code} opts={opt} loading="lazy" />
             </Box>
           </animated.div>
         </Grid>

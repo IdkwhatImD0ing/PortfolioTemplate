@@ -25,6 +25,7 @@ export default function ProjectDisplay() {
 
         paddingTop: '10vh',
         paddingBottom: '20vh',
+        overflow: 'hidden',
       }}
     >
       <Stack direction="column" width="100%" spacing={10} sx={{}}>

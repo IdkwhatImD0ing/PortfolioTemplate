@@ -87,6 +87,7 @@ export default function Display() {
         left: 0,
 
         paddingTop: '10vh',
+        overflow: 'hidden',
       }}
     >
       <Stack
