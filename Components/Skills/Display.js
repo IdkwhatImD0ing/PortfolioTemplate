@@ -20,7 +20,7 @@ const frameworks = [
 ];
 
 const databases = [
-  {name: 'Firebase', level: 95, color: 'orange'},
+  {name: 'Firebase', level: 100, color: 'orange'},
   {name: 'PostgreSQL', level: 80, color: 'darkblue'},
 ];
 
