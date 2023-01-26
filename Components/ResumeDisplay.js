@@ -3,11 +3,23 @@ import React, {useContext, useState} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
 import workerSrc from '../pdf-worker';
 import {WidthContext} from './page';
+import {animated, useSpring} from 'react-spring';
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 export default function ResumeDisplay() {
-  const width = useContext(WidthContext);
+  const width = structuredClone(useContext(WidthContext));
   const [loading, setLoading] = useState(true);
+
+  const fadeIn = useSpring({
+    from: {y: -100, opacity: 0},
+    to: {y: 0, opacity: 1},
+  });
+
+  const fade = useSpring({
+    from: {opacity: 0},
+    to: {opacity: 1},
+    delay: 500,
+  });
 
   const onClick = () => {
     // Downloads the pdf
@@ -33,27 +45,31 @@ export default function ResumeDisplay() {
         paddingTop: '10vh',
       }}
     >
-      <Typography
-        variant="h3"
-        color="white"
-        sx={{
-          mb: '5vh',
-        }}
-      >
-        Resume
-      </Typography>
-      {!loading && (
-        <Button
-          variant="contained"
-          onClick={() => {
-            onClick();
-          }}
+      <animated.div style={{...fadeIn}}>
+        <Typography
+          variant="h3"
+          color="white"
           sx={{
             mb: '5vh',
           }}
         >
-          Download
-        </Button>
+          Resume
+        </Typography>
+      </animated.div>
+      {!loading && (
+        <animated.div style={{...fade}}>
+          <Button
+            variant="contained"
+            onClick={() => {
+              onClick();
+            }}
+            sx={{
+              mb: '5vh',
+            }}
+          >
+            Download
+          </Button>
+        </animated.div>
       )}
       <Document
         file={'./resume.pdf'}
@@ -77,17 +93,19 @@ export default function ResumeDisplay() {
       </Document>
       <Box height="5vh"></Box>
       {!loading && (
-        <Button
-          variant="contained"
-          onClick={() => {
-            onClick();
-          }}
-          sx={{
-            mb: '20vh',
-          }}
-        >
-          Download
-        </Button>
+        <animated.div style={{...fade}}>
+          <Button
+            variant="contained"
+            onClick={() => {
+              onClick();
+            }}
+            sx={{
+              mb: '20vh',
+            }}
+          >
+            Download
+          </Button>
+        </animated.div>
       )}
     </Box>
   );

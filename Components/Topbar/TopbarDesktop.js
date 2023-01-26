@@ -23,6 +23,9 @@ export default function TopbarDesktop() {
         transition: 'all 0.3s ease',
         boxShadow:
           scrollY > 30 ? '0px 0px 10px 0px rgba(9, 5, 29, 0.171)' : 'none',
+
+        paddingTop: 1,
+        paddingBottom: 1,
       }}
     >
       <Stack
