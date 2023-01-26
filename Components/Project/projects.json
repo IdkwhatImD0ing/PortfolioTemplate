@@ -16,6 +16,37 @@
     "github": "https://github.com/IdkwhatImD0ing/PoolParty"
   },
   {
+    "name": "Fiesta",
+    "description": "Fiesta is a web-based event planning app that simplifies the process of organizing and registering events. It was created to address the common challenges faced by event coordinators such as uncertainty of attendance and a lack of streamlined registration. The app allows users to easily plan and create events by setting the date, location, and other details. It also provides a simple registration process for attendees, giving event coordinators a clear understanding of attendance to plan events seamlessly and efficiently. The app also allows for easy communication and sharing of event details, including date and location, making the planning process convenient for everyone involved. With Fiesta, event coordinators can take control of the planning process and ensure a successful event.",
+    "code": "OjV4-Km9sWw",
+    "techStack": [
+      "React",
+      "ExpressJs",
+      "Hop.io",
+      "Firebase",
+      "Socker.io",
+      "Material UI"
+    ],
+    "link": "https://fiesta.hop.sh/",
+    "github": "https://github.com/cnRachel/civic-hacks"
+  },
+  {
+    "name": "Eat Safely",
+    "description": "Introducing EatSafely, a web app that uses machine learning to help you identify if your food is spoiled or not, thus reducing the risk of foodborne illness and wasting money. With a custom-trained model and an accuracy of 97%, simply upload a photo of the fruit in question, and EatSafely will give you a clear and accurate assessment of whether or not it is safe to eat. Say goodbye to spoiled fruits and hello to EatSafely.",
+    "code": "tr3ylJX1h30",
+    "techStack": ["React", "Flask", "Hop.io", "Socket.Io", "Tensorflow"],
+    "link": "https://eatsafely.hop.sh/",
+    "github": "https://devpost.com/software/eatsafely"
+  },
+  {
+    "name": "Penmanship Pro",
+    "description": "A way to improve handwriting! This webapp is designed to help you improve your handwriting through a series of interactive exercises and challenges. Whether you're a student looking to ace your exams or an adult looking to tidy up your notes, Penmanship has something for everyone. Our ML model rates your writing, helping you to identify and correct any mistakes. With the app's timed exercise, you'll be able to track your progress and see how you stack up against other users. So why wait? Start improving your handwriting today and see the difference it can make!",
+    "code": "tf44b12LaDU",
+    "techStack": ["React", "Flask", "Hop.io", "Socket.Io", "Tensorflow"],
+    "link": "https://kazitasin07.wixsite.com/penmenshipro",
+    "github": "https://github.com/Renaud2002/PenmanshipPro-TLE"
+  },
+  {
     "name": "Remote Trainer",
     "description": "RemoteTrainer is a web-based fitness application designed to help users achieve their fitness goals. It allows users to search for and filter exercises based on the muscle groups they want to target and the equipment they have available. Once the user has submitted this information, the app generates a list of exercises that are suitable for their needs. Each exercise is accompanied by a GIF showing the proper form and technique, as well as additional details about the benefits and challenges of the exercise. In addition to providing a wide range of exercises, RemoteTrainer also helps users track their progress by keeping track of their body mass index (BMI) and body fat percentage. To do this, the app asks users to input their age, height, and weight, and uses this information to calculate their BMI and body fat. With its comprehensive search features and tracking capabilities, RemoteTrainer is a valuable tool for anyone looking to improve their fitness and achieve their goals.",
     "code": "vL-X-1XrIN0",
