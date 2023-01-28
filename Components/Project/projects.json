@@ -27,7 +27,7 @@
       "Socker.io",
       "Material UI"
     ],
-    "link": "https://fiesta.hop.sh/",
+    "link": "https://fiesta-one.vercel.app/",
     "github": "https://github.com/cnRachel/civic-hacks"
   },
   {
@@ -35,7 +35,7 @@
     "description": "Introducing EatSafely, a web app that uses machine learning to help you identify if your food is spoiled or not, thus reducing the risk of foodborne illness and wasting money. With a custom-trained model and an accuracy of 97%, simply upload a photo of the fruit in question, and EatSafely will give you a clear and accurate assessment of whether or not it is safe to eat. Say goodbye to spoiled fruits and hello to EatSafely.",
     "code": "tr3ylJX1h30",
     "techStack": ["React", "Flask", "Hop.io", "Socket.Io", "Tensorflow"],
-    "link": "https://eatsafely.hop.sh/",
+    "link": "https://eat-safely.vercel.app/",
     "github": "https://devpost.com/software/eatsafely"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Progno-D is a web-based artificial intelligence (AI) tool that helps users select the most appropriate medication for their illness. It provides recommendations for multiple drugs based on customer reviews and ratings from the past. The app uses a variety of features, such as ratings and reviews, to generate these recommendations. This helps users make informed decisions about which medication to use, based on the experiences of others. In addition to providing recommendations, Progno-D also allows users to learn more about each drug, including its common manufacturers and active ingredients. This information can help users understand the potential risks and benefits of each medication and make more informed choices. Overall, Progno-D is a valuable resource for anyone looking to find the right medication for their needs.",
     "code": "eqZS5WqHXW4",
     "techStack": ["React", "Flask", "RapidApi", "Hop.io", "NLTK"],
-    "link": "https://prognod.hop.sh/",
+    "link": "https://progno-d.vercel.app/",
     "github": "https://github.com/RupakKadhare15/Progno-D"
   },
   {
