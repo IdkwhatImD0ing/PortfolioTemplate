@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Box, Grid, Stack, Typography} from '@mui/material';
 import {SkillBars} from 'react-skills';
 import {animated, useSpring} from 'react-spring';
+import {WidthContext} from '../Components/page';
 
 const programmingLanguages = [
   {name: 'JavaScript', level: 100, color: '#8B8000'},
@@ -35,6 +36,7 @@ const libraries = [
 ];
 
 export default function Display() {
+  const width = useContext(WidthContext);
   const fadeIn = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
@@ -87,7 +89,7 @@ export default function Display() {
         left: 0,
 
         paddingTop: '10vh',
-        overflow: 'hidden',
+        overflow: width < 800 ? 'scroll' : 'hidden',
       }}
     >
       <Stack

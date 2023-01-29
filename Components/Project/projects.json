@@ -1,5 +1,14 @@
 [
   {
+    "name": "Paddy Plant Prognosis",
+    "description": "Our web app, Paddy Plant Prognosis, is a game changer for paddy cultivation. It utilizes cutting-edge computer vision technology to help farmers identify diseases in their crops quickly and accurately. With manual disease diagnosis often costly and time-consuming, our app offers a simple solution. By using our app, farmers can easily capture a picture of their plant and upload it to our system for instant analysis. The app then uses its advanced algorithms to identify any potential diseases, providing farmers with actionable information that they can use to protect their crops and avoid potential loss. With Paddy Plant Prognosis, farmers can catch diseases early, saving both time and money that would have been spent on costly treatments and labor. This app is a tool that can make a real difference in the livelihood of farmers, reducing crop loss and increasing yield.",
+    "code": "M_xLQeglzgU",
+    "techStack": ["Vite", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
+    "link": "https://www.paddyplantprognosis.tech/",
+    "github": "https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis"
+  },
+
+  {
     "name": "Make Me Lunch",
     "description": "MakeMeLunch is a web-based meal planning and grocery shopping tool that helps users organize and optimize their food-related tasks. The app allows users to create a list of ingredients and recipes, and then generates a shopping list based on the ingredients needed for the selected recipes. This helps users save time and money by avoiding unnecessary purchases and reducing food waste. In addition to generating shopping lists, MakeMeLunch can also take in an inventory of ingredients that the user already has on hand and generate a list of recipes that can be made with those ingredients. This feature is particularly useful for those who want to use up ingredients that they already have or who want to save money by using what they already have in their pantry. Overall, MakeMeLunch is an easy-to-use and convenient tool for anyone looking to streamline their meal planning and grocery shopping processes.",
     "code": "SmRpW295Xkk",
