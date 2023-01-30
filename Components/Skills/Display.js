@@ -89,6 +89,7 @@ export default function Display() {
         left: 0,
 
         paddingTop: '10vh',
+        paddingBottom: '10vh',
         overflow: width < 800 ? 'scroll' : 'hidden',
       }}
     >
@@ -141,7 +142,6 @@ export default function Display() {
             </animated.div>
           </Grid>
         </Grid>
-        <Box height="10vh" />
       </Stack>
     </Box>
   );

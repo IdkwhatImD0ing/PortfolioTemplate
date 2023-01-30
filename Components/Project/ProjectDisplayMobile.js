@@ -21,7 +21,7 @@ export default function ProjectDisplayMobile() {
       }}
     >
       <Stack direction="column" width="100%" spacing={10} sx={{}}>
-        <Typography variant="h3" align="center" color="white">
+        <Typography maxWidth="80%" variant="h3" align="center" color="white">
           Personal Projects
         </Typography>
         {Projects.map((project, index) => {

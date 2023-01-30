@@ -15,6 +15,7 @@ export default function HeroMobile() {
         top: 0,
         left: 0,
         paddingTop: '10vh',
+        paddingBot: '10vh',
 
         overflow: 'auto',
       }}
@@ -72,7 +73,7 @@ export default function HeroMobile() {
         </Typography>
         <Typer />
         <Typography
-          variant="h6"
+          variant="h7"
           sx={{
             color: 'white',
             mt: 5,
@@ -85,7 +86,6 @@ export default function HeroMobile() {
           experience in Applied Machine Learning through personal projects and
           Kaggle Competitions.
         </Typography>
-        <Box height="10vh" />
       </Stack>
     </Box>
   );

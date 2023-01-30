@@ -50,6 +50,7 @@ export default function EducationDisplay() {
 
         overflow: 'hidden',
         paddingTop: '10vh',
+        paddingBottom: '10vh',
       }}
     >
       <animated.div style={{...fadeIn}}>
@@ -185,7 +186,6 @@ export default function EducationDisplay() {
           </Stack>
         </Grid>
       </Grid>
-      <Box height="10vh" />
     </Box>
   );
 }
