@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {Box, Grid, Stack, Typography} from '@mui/material';
 import {SkillBars} from 'react-skills';
 import {animated, useSpring} from 'react-spring';
-import {WidthContext} from '../Components/page';
+import {WidthContext} from '../page';
 
 const programmingLanguages = [
   {name: 'JavaScript', level: 100, color: '#8B8000'},
