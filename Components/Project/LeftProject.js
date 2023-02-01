@@ -71,6 +71,7 @@ export default function LeftProject(props) {
             padding="5%"
           >
             <Box
+              maxWidth="35vw"
               sx={{
                 marginTop: 0,
                 alignItems: 'center',

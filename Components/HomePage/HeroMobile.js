@@ -73,7 +73,7 @@ export default function HeroMobile() {
         </Typography>
         <Typer />
         <Typography
-          variant="h7"
+          variant="h6"
           sx={{
             color: 'white',
             mt: 5,
