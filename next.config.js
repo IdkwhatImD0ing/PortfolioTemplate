@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    runtime: 'edge',
+  },
   webpack: (config) => {
     // load worker files as a urls with `file-loader`
     config.module.rules.unshift({
