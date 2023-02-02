@@ -5,6 +5,7 @@ const nextConfig = {
   experimental: {
     runtime: 'edge',
   },
+  runtime: 'experimental-edge',
   webpack: (config) => {
     // load worker files as a urls with `file-loader`
     config.module.rules.unshift({
