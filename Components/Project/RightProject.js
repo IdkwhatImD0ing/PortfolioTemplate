@@ -52,67 +52,70 @@ export default function LeftProject(props) {
     <Grid
       container
       direction="row-reverse"
-      alignItems="center"
+      alignItems="stretch"
       justifyContent="center"
     >
-      <div ref={triggerRef} />
       {windowHeight && (
         <Grid item xs={6}>
           <animated.div style={{...fadeRight}}>
-            <Box alignItems="center" padding="5%">
-              <YouTube videoId={props.code} opts={opt} loading="lazy" />
-            </Box>
-          </animated.div>
-        </Grid>
-      )}
-      <Grid item xs={6}>
-        <animated.div style={{...fadeLeft}}>
-          <Stack
-            direction="column"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={2}
-            padding="5%"
-          >
-            <Box
-              maxWidth="35vw"
-              sx={{
-                marginTop: 0,
-                alignItems: 'center',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0px 0px 10px #000000',
-                padding: '10%',
-                backgroundColor: 'rgba(255, 255, 255, 0.375)',
-                borderRadius: 10,
-                transform: 'scale(1)',
-                transition: 'transform 0.5s',
-
-                '&:hover': {
-                  transform: 'scale(1.05)',
-                },
-              }}
+            <Stack
+              direction="column"
+              alignItems="center"
+              justifyContent="center"
+              spacing={1}
             >
-              <Typography variant="h3" align="center" sx={{mb: 5}}>
-                {props.name}
-              </Typography>
-              <Typography
-                variant="h6"
+              <Box
                 sx={{
-                  mb: 2,
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  paddingY: '20px',
+                  paddingX: '30px',
+                  borderRadius: 10,
+
+                  backgroundColor: '#301934',
+                  color: 'white',
+
+                  mb: 1,
                 }}
               >
-                {props.description}
-              </Typography>
-              <Stack direction="row" spacing={2}>
-                <Typography variant="h6" sx={{mb: 2, fontWeight: 'bold'}}>
-                  Technologies Used:
+                <Typography
+                  variant="h4"
+                  align="center"
+                  sx={{
+                    fontWeight: 'bold',
+                    fontFamily: 'Arial, sans-serif',
+                  }}
+                >
+                  {props.name}
                 </Typography>
+              </Box>
+
+              <Stack
+                direction="row"
+                alignitems="center"
+                justifyContent="center"
+                spacing={2}
+              >
                 {props.techStack.map((tech) => (
-                  <Typography variant="h6" sx={{mb: 2}}>
-                    {tech}
-                  </Typography>
+                  <Box
+                    sx={{
+                      padding: '5px 10px',
+                      borderRadius: 2,
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+
+                      backgroundColor: '#301934',
+                      color: '#fff',
+                    }}
+                  >
+                    <Typography variant="h7">{tech}</Typography>
+                  </Box>
                 ))}
               </Stack>
+
+              <YouTube videoId={props.code} opts={opt} loading="lazy" />
               <Stack
                 direction="row"
                 spacing={2}
@@ -127,15 +130,10 @@ export default function LeftProject(props) {
                   onClick={() => window.open(props.link)}
                   sx={{
                     borderRadius: 50,
+                    textTransform: 'none',
                   }}
                 >
-                  <Typography
-                    variant="h7"
-                    align="center"
-                    sx={{
-                      textTransform: 'none',
-                    }}
-                  >
+                  <Typography variant="h7" align="center">
                     Demo
                   </Typography>
                 </Button>
@@ -144,19 +142,66 @@ export default function LeftProject(props) {
                   onClick={() => window.open(props.github)}
                   sx={{
                     borderRadius: 50,
+                    textTransform: 'none',
                   }}
                 >
-                  <Typography
-                    variant="h7"
-                    align="center"
-                    sx={{
-                      textTransform: 'none',
-                    }}
-                  >
+                  <Typography variant="h7" align="center">
                     Github
                   </Typography>
                 </Button>
               </Stack>
+            </Stack>
+          </animated.div>
+        </Grid>
+      )}
+      <Grid item xs={6}>
+        <Box
+          ref={triggerRef}
+          sx={{
+            position: 'relative',
+            top: '50vh',
+          }}
+        />
+        <animated.div style={{...fadeLeft, height: '100%'}}>
+          <Stack
+            height="100%"
+            direction="column"
+            justifyContent="space-between"
+            alignItems="center"
+            spacing={2}
+          >
+            <Box
+              height="100%"
+              maxWidth="35vw"
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+
+                marginTop: 0,
+                alignItems: 'center',
+                backdropFilter: 'blur(10px)',
+                boxShadow: '0px 0px 10px #000000',
+                padding: '50px',
+                backgroundColor: 'rgba(255, 255, 255, 0.375)',
+                borderRadius: 10,
+                transform: 'scale(1)',
+                transition: 'transform 0.5s',
+
+                '&:hover': {
+                  transform: 'scale(1.05)',
+                },
+              }}
+            >
+              <Typography
+                variant="h6"
+                sx={{
+                  mb: 2,
+                  fontFamily: 'Montserrat',
+                }}
+              >
+                {props.description}
+              </Typography>
             </Box>
           </Stack>
         </animated.div>
