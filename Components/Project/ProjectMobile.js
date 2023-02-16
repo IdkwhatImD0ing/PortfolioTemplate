@@ -40,7 +40,7 @@ export default function ProjectMobile(props) {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        spacing={3}
+        spacing={2}
         sx={{
           padding: '10%',
           marginTop: 0,
@@ -71,9 +71,22 @@ export default function ProjectMobile(props) {
         >
           {props.techStack.map((tech, index) => (
             <Grid item xs={6} key={'gitem' + index}>
-              <Typography variant="h6" align="center" sx={{mb: 2}}>
-                {tech}
-              </Typography>
+              <Box
+                sx={{
+                  padding: '5px 10px',
+                  borderRadius: 2,
+                  margin: '5px 10px',
+
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+
+                  backgroundColor: '#301934',
+                  color: '#fff',
+                }}
+              >
+                <Typography variant="h7">{tech}</Typography>
+              </Box>
             </Grid>
           ))}
         </Grid>

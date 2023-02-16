@@ -8,10 +8,6 @@ export default function ProjectDisplayMobile() {
     <Box
       width="100%"
       sx={{
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-
         position: 'absolute',
         top: 0,
         left: 0,
@@ -20,7 +16,13 @@ export default function ProjectDisplayMobile() {
         paddingBottom: '20vh',
       }}
     >
-      <Stack direction="column" width="100%" spacing={10} sx={{}}>
+      <Stack
+        direction="column"
+        width="100%"
+        spacing={10}
+        justifyContent="center"
+        alignItems="center"
+      >
         <Typography maxWidth="80%" variant="h3" align="center" color="white">
           Personal Projects
         </Typography>
