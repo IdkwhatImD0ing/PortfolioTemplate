@@ -82,9 +82,8 @@ export default function HeroMobile() {
           I am a Third Year Undergrad at UC Santa Cruz, studying Computer
           Science with a focus on Machine Learning and Full-Stack Web
           Development. I am a Full-Stack Developer with experience in React,
-          NextJs, NodeJs, ExpressJs, Flask, and PostGreSQL. I also have
-          experience in Applied Machine Learning through personal projects and
-          Kaggle Competitions.
+          Vue, Flask, Express, and PostGreSQL. I also have experience in Applied
+          Machine Learning through personal projects and Kaggle Competitions.
         </Typography>
       </Stack>
     </Box>
