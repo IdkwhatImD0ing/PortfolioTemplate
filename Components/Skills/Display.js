@@ -76,7 +76,6 @@ export default function Display() {
 
   return (
     <Box
-      height="90vh"
       width="100%"
       sx={{
         display: 'flex',
