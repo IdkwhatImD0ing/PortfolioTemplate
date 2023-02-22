@@ -7,7 +7,31 @@
     "link": "https://www.paddyplantprognosis.tech/",
     "github": "https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis"
   },
-
+  {
+    "name": "SlugLoop ",
+    "description": "SlugLoop is a real-time map app designed to help UC Santa Cruz students navigate campus with ease by providing up-to-date information on the location and routes of loop buses, reducing pressure on the metro buses during peak hours, and providing a seamless user experience. With a simple and attractive interface, SlugLoop offers an incredibly useful service to students that makes transportation around campus more efficient and less stressful.",
+    "code": "mLb5GdOKQFY",
+    "techStack": [
+      "React",
+      "ExpressJs",
+      "React Router",
+      "Material UI",
+      "Firebase",
+      "Raspberry PI",
+      "C",
+      "Firebase"
+    ],
+    "link": "https://www.slugloop.tech/",
+    "github": "https://github.com/IdkwhatImD0ing/SlugLoop"
+  },
+  {
+    "name": "Sink Or Swim",
+    "description": "Sink or Swim is a web application that uses machine learning to predict a user's chances of survival on the Titanic based on their personal information, and generates a personalized story about their experience on the ship, providing a unique and engaging glimpse into one of the most infamous shipwrecks in history. By combining cutting-edge technology with historical events, Sink or Swim offers a thought-provoking and immersive experience that brings the past to life.",
+    "code": "4V-2l-Zel5s",
+    "techStack": ["NextJs13", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
+    "link": "https://sinkorswim.vercel.app/",
+    "github": "https://github.com/simon-quach/sink-or-swim"
+  },
   {
     "name": "Make Me Lunch",
     "description": "MakeMeLunch is a web-based meal planning and grocery shopping tool that helps users organize and optimize their food-related tasks. The app allows users to create a list of ingredients and recipes, and then generates a shopping list based on the ingredients needed for the selected recipes. This helps users save time and money by avoiding unnecessary purchases and reducing food waste. In addition to generating shopping lists, MakeMeLunch can also take in an inventory of ingredients that the user already has on hand and generate a list of recipes that can be made with those ingredients. This feature is particularly useful for those who want to use up ingredients that they already have or who want to save money by using what they already have in their pantry. Overall, MakeMeLunch is an easy-to-use and convenient tool for anyone looking to streamline their meal planning and grocery shopping processes.",

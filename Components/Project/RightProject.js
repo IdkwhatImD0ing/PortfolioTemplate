@@ -62,7 +62,7 @@ export default function LeftProject(props) {
               direction="column"
               alignItems="center"
               justifyContent="center"
-              spacing={1}
+              spacing={2}
             >
               <Box
                 sx={{
@@ -96,6 +96,10 @@ export default function LeftProject(props) {
                 alignitems="center"
                 justifyContent="center"
                 spacing={2}
+                sx={{
+                  flexWrap: 'wrap',
+                  rowGap: '10px',
+                }}
               >
                 {props.techStack.map((tech) => (
                   <Box
