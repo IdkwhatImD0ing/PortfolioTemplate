@@ -97,10 +97,6 @@ export default function LeftProject(props) {
                 alignitems="center"
                 justifyContent="center"
                 spacing={2}
-                sx={{
-                  flexWrap: 'wrap',
-                  rowGap: '10px',
-                }}
               >
                 {props.techStack.map((tech) => (
                   <Box
