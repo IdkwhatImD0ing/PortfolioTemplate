@@ -15,12 +15,18 @@ export default function HeroMobile() {
         top: 0,
         left: 0,
         paddingTop: '10vh',
-        paddingBot: '10vh',
 
         overflow: 'auto',
       }}
     >
-      <Stack maxWidth="80vw" direction="column" alignItems="flex-start">
+      <Stack
+        maxWidth="80vw"
+        direction="column"
+        alignItems="flex-start"
+        sx={{
+          paddingBottom: '10vh',
+        }}
+      >
         <Stack
           direction="row"
           alignItems="center"
