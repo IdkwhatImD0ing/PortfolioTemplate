@@ -85,7 +85,9 @@ export default function ProjectMobile(props) {
                   color: '#fff',
                 }}
               >
-                <Typography variant="h7">{tech}</Typography>
+                <Typography variant="h7" align="center">
+                  {tech}
+                </Typography>
               </Box>
             </Grid>
           ))}
