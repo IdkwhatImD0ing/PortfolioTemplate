@@ -18,7 +18,7 @@
   },
   {
     "name": "Assistance ",
-    "description": "Assistance is a versatile web app enabling users to engage in context-aware conversations with multiple large language models, including Bing Chat, Google Bard, and ChatGPT, providing an efficient way to obtain useful and accurate information from distinct data sources.",
+    "description": "Assistance is an innovative application that enables users to interact with multiple large language models concurrently, such as Bing Chat, Google Bard, and ChatGPT3.5, offering a more comprehensive and accurate response to queries. The application is designed to allow users to maintain context, switch between models seamlessly, and ask questions to all models, leveraging their unique strengths and making the AI experience more efficient and valuable.",
     "code": "DAuMnWCKtSk",
     "techStack": [
       "Gatsby",
