@@ -1,0 +1,38 @@
+{
+  "theme_color": "#7e00de",
+  "background_color": "#000080",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Bill Zhang's Portfolio Website",
+  "short_name": "Art3m1s.me",
+  "description": "Personal Portfolio website for Bill Zhang",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "maskable.png",
+      "sizes": "48x48",
+      "type": "image/x-icon",
+      "purpose": "maskable"
+    }
+  ]
+}
