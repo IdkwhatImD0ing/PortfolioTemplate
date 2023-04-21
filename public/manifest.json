@@ -1,7 +1,7 @@
 {
   "theme_color": "#7e00de",
   "background_color": "#000080",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "name": "Bill Zhang's Portfolio Website",

@@ -1,16 +1,8 @@
 [
   {
-    "name": "Paddy Plant Prognosis",
-    "description": "Our web app, Paddy Plant Prognosis, is a game changer for paddy cultivation. It utilizes cutting-edge computer vision technology to help farmers identify diseases in their crops quickly and accurately. With manual disease diagnosis often costly and time-consuming, our app offers a simple solution. By using our app, farmers can easily capture a picture of their plant and upload it to our system for instant analysis. The app then uses its advanced algorithms to identify any potential diseases, providing farmers with actionable information that they can use to protect their crops and avoid potential loss. With Paddy Plant Prognosis, farmers can catch diseases early, saving both time and money that would have been spent on costly treatments and labor. This app is a tool that can make a real difference in the livelihood of farmers, reducing crop loss and increasing yield.",
-    "code": "M_xLQeglzgU",
-    "techStack": ["Vite", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
-    "link": "https://www.paddyplantprognosis.tech/",
-    "github": "https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis"
-  },
-  {
     "name": "SlugLoop ",
     "description": "SlugLoop is a real-time map app designed to help UC Santa Cruz students navigate campus with ease by providing up-to-date information on the location and routes of loop buses, reducing pressure on the metro buses during peak hours, and providing a seamless user experience. With a simple and attractive interface, SlugLoop offers an incredibly useful service to students that makes transportation around campus more efficient and less stressful.",
-    "code": "mLb5GdOKQFY",
+    "code": "fEAl8MajeOs",
     "techStack": [
       "React",
       "ExpressJs",
@@ -25,11 +17,34 @@
     "github": "https://github.com/IdkwhatImD0ing/SlugLoop"
   },
   {
+    "name": "Assistance ",
+    "description": "Assistance is a versatile web app enabling users to engage in context-aware conversations with multiple large language models, including Bing Chat, Google Bard, and ChatGPT, providing an efficient way to obtain useful and accurate information from distinct data sources.",
+    "code": "DAuMnWCKtSk",
+    "techStack": [
+      "Gatsby",
+      "FastAPI",
+      "Material UI",
+      "OpenAI",
+      "Google Bard",
+      "Bing Chat"
+    ],
+    "link": "https://assistance.projects.art3m1s.me/",
+    "github": "https://github.com/IdkwhatImD0ing/Assistance"
+  },
+  {
+    "name": "Paddy Plant Prognosis",
+    "description": "Our web app, Paddy Plant Prognosis, is a game changer for paddy cultivation. It utilizes cutting-edge computer vision technology to help farmers identify diseases in their crops quickly and accurately. With manual disease diagnosis often costly and time-consuming, our app offers a simple solution. By using our app, farmers can easily capture a picture of their plant and upload it to our system for instant analysis. The app then uses its advanced algorithms to identify any potential diseases, providing farmers with actionable information that they can use to protect their crops and avoid potential loss. With Paddy Plant Prognosis, farmers can catch diseases early, saving both time and money that would have been spent on costly treatments and labor. This app is a tool that can make a real difference in the livelihood of farmers, reducing crop loss and increasing yield.",
+    "code": "M_xLQeglzgU",
+    "techStack": ["Vite", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
+    "link": "https://www.paddyplantprognosis.tech/",
+    "github": "https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis"
+  },
+  {
     "name": "Sink Or Swim",
     "description": "Sink or Swim is a web application that uses machine learning to predict a user's chances of survival on the Titanic based on their personal information, and generates a personalized story about their experience on the ship, providing a unique and engaging glimpse into one of the most infamous shipwrecks in history. By combining cutting-edge technology with historical events, Sink or Swim offers a thought-provoking and immersive experience that brings the past to life.",
     "code": "4V-2l-Zel5s",
     "techStack": ["NextJs13", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
-    "link": "https://sinkorswim.vercel.app/",
+    "link": "https://sos.projects.art3m1s.me/",
     "github": "https://github.com/simon-quach/sink-or-swim"
   },
   {
@@ -60,7 +75,7 @@
       "Socker.io",
       "Material UI"
     ],
-    "link": "https://fiesta-one.vercel.app/",
+    "link": "https://fiesta.projects.art3m1s.me/",
     "github": "https://github.com/cnRachel/civic-hacks"
   },
   {
@@ -68,7 +83,7 @@
     "description": "Introducing EatSafely, a web app that uses machine learning to help you identify if your food is spoiled or not, thus reducing the risk of foodborne illness and wasting money. With a custom-trained model and an accuracy of 97%, simply upload a photo of the fruit in question, and EatSafely will give you a clear and accurate assessment of whether or not it is safe to eat. Say goodbye to spoiled fruits and hello to EatSafely.",
     "code": "tr3ylJX1h30",
     "techStack": ["React", "Flask", "Hop.io", "Socket.Io", "Tensorflow"],
-    "link": "https://eat-safely.vercel.app/",
+    "link": "https://eatsafely.projects.art3m1s.me/",
     "github": "https://devpost.com/software/eatsafely"
   },
   {
@@ -92,7 +107,7 @@
     "description": "Progno-D is a web-based artificial intelligence (AI) tool that helps users select the most appropriate medication for their illness. It provides recommendations for multiple drugs based on customer reviews and ratings from the past. The app uses a variety of features, such as ratings and reviews, to generate these recommendations. This helps users make informed decisions about which medication to use, based on the experiences of others. In addition to providing recommendations, Progno-D also allows users to learn more about each drug, including its common manufacturers and active ingredients. This information can help users understand the potential risks and benefits of each medication and make more informed choices. Overall, Progno-D is a valuable resource for anyone looking to find the right medication for their needs.",
     "code": "eqZS5WqHXW4",
     "techStack": ["React", "Flask", "RapidApi", "Hop.io", "NLTK"],
-    "link": "https://progno-d.vercel.app/",
+    "link": "https://prognod.projects.art3m1s.me/",
     "github": "https://github.com/RupakKadhare15/Progno-D"
   },
   {
