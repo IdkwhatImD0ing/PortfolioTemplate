@@ -1,39 +1,39 @@
-import React from 'react';
-import {Box, Grid, Stack, Typography} from '@mui/material';
-import {animated, useSpring} from 'react-spring';
+import React from 'react'
+import {Box, Grid, Stack, Typography} from '@mui/material'
+import {animated, useSpring} from 'react-spring'
 
 export default function EducationDisplay() {
   const fadeIn = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
-  });
+  })
 
   const zoomLeft = useSpring({
     from: {x: -300, opacity: 0},
     to: {x: 0, opacity: 1},
-  });
+  })
 
   const zoomRight = useSpring({
     from: {x: 300, opacity: 0},
     to: {x: 0, opacity: 1},
-  });
+  })
 
   const zoomUp = useSpring({
     from: {y: 300, opacity: 0},
     to: {y: 0, opacity: 1},
-  });
+  })
 
   const zoomUp1 = useSpring({
     from: {y: 300, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 250,
-  });
+  })
 
   const zoomUp2 = useSpring({
     from: {y: 300, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 500,
-  });
+  })
 
   return (
     <Box
@@ -71,7 +71,7 @@ export default function EducationDisplay() {
             mb: 1,
           }}
         >
-          Major: Computer Science BS
+          Major: Computer Science BS | Dates: 2020 - 2023
         </Typography>
       </animated.div>
       <animated.div style={{...zoomRight}}>
@@ -187,5 +187,5 @@ export default function EducationDisplay() {
         </Grid>
       </Grid>
     </Box>
-  );
+  )
 }

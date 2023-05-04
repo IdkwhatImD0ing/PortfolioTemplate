@@ -1,5 +1,5 @@
-import {Box, Stack, Typography} from '@mui/material';
-import Typer from './Typewriter';
+import {Box, Stack, Typography} from '@mui/material'
+import Typer from './Typewriter'
 
 export default function HeroMobile() {
   return (
@@ -85,13 +85,15 @@ export default function HeroMobile() {
             mt: 5,
           }}
         >
-          I am a Third Year Undergrad at UC Santa Cruz, studying Computer
-          Science with a focus on Machine Learning and Full-Stack Web
-          Development. I am a Full-Stack Developer with experience in React,
-          Vue, Flask, Express, and PostGreSQL. I also have experience in Applied
-          Machine Learning through personal projects and Kaggle Competitions.
+          I am an incoming Master of Science student in Computer Science at the
+          University of Southern California, specializing in Artificial
+          Intelligence. As a recent graduate from UC Santa Cruz, I have a strong
+          foundation in Machine Learning and Full-Stack Web Development. My
+          skills as a Full-Stack Developer encompass React, Vue, Flask, Express,
+          and PostgreSQL. Additionally, I have applied my Machine Learning
+          expertise through personal projects and Kaggle Competitions.
         </Typography>
       </Stack>
     </Box>
-  );
+  )
 }

@@ -1,24 +1,24 @@
-import {Box, Stack, Typography} from '@mui/material';
-import Typer from './Typewriter';
-import {animated, useSpring} from '@react-spring/web';
+import {Box, Stack, Typography} from '@mui/material'
+import Typer from './Typewriter'
+import {animated, useSpring} from '@react-spring/web'
 
 export default function Hero() {
   const topFirst = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 0,
-  });
+  })
 
   const top = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 250,
-  });
+  })
   const bot = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 500,
-  });
+  })
   return (
     <Box
       height="100vh"
@@ -85,14 +85,17 @@ export default function Hero() {
               mt: 5,
             }}
           >
-            I am a Third Year Undergrad at UC Santa Cruz, studying Computer
-            Science with a focus on Machine Learning and Full-Stack Web
-            Development. I am a Full-Stack Developer with experience in React, Vue, Flask, Express, and PostGreSQL. I also have
-            experience in Applied Machine Learning through personal projects and
-            Kaggle Competitions.
+            I am an incoming Master of Science student in Computer Science at
+            the University of Southern California, specializing in Artificial
+            Intelligence. As a recent graduate from UC Santa Cruz, I have a
+            strong foundation in Machine Learning and Full-Stack Web
+            Development. My skills as a Full-Stack Developer encompass React,
+            Vue, Flask, Express, and PostgreSQL. Additionally, I have applied my
+            Machine Learning expertise through personal projects and Kaggle
+            Competitions.
           </Typography>
         </animated.div>
       </Stack>
     </Box>
-  );
+  )
 }

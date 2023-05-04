@@ -1,9 +1,9 @@
-import {Box, Stack} from '@mui/material';
-import Link from 'next/link';
-import {useRouter} from 'next/router';
+import {Box, Stack} from '@mui/material'
+import Link from 'next/link'
+import {useRouter} from 'next/router'
 
 export default function Botbar() {
-  const router = useRouter();
+  const router = useRouter()
   // This function is a stack of icone that will be displayed at the bottom of the page.
   return (
     <Box
@@ -25,10 +25,7 @@ export default function Botbar() {
         justifyContent="space-evenly"
         spacing={3}
       >
-        <Link
-          href="https://www.linkedin.com/in/bill-zhang-57976b1b3/"
-          target="_blank"
-        >
+        <Link href="https://www.linkedin.com/in/bill-zhang1" target="_blank">
           <Box
             component="img"
             src="/LinkedIn.png"
@@ -121,5 +118,5 @@ export default function Botbar() {
         </Link>
       </Stack>
     </Box>
-  );
+  )
 }
