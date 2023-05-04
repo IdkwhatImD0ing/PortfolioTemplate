@@ -1,16 +1,8 @@
 [
   {
-    "name": "Paddy Plant Prognosis",
-    "description": "Our web app, Paddy Plant Prognosis, is a game changer for paddy cultivation. It utilizes cutting-edge computer vision technology to help farmers identify diseases in their crops quickly and accurately. With manual disease diagnosis often costly and time-consuming, our app offers a simple solution. By using our app, farmers can easily capture a picture of their plant and upload it to our system for instant analysis. The app then uses its advanced algorithms to identify any potential diseases, providing farmers with actionable information that they can use to protect their crops and avoid potential loss. With Paddy Plant Prognosis, farmers can catch diseases early, saving both time and money that would have been spent on costly treatments and labor. This app is a tool that can make a real difference in the livelihood of farmers, reducing crop loss and increasing yield.",
-    "code": "M_xLQeglzgU",
-    "techStack": ["Vite", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
-    "link": "https://www.paddyplantprognosis.tech/",
-    "github": "https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis"
-  },
-  {
     "name": "SlugLoop ",
     "description": "SlugLoop is a real-time map app designed to help UC Santa Cruz students navigate campus with ease by providing up-to-date information on the location and routes of loop buses, reducing pressure on the metro buses during peak hours, and providing a seamless user experience. With a simple and attractive interface, SlugLoop offers an incredibly useful service to students that makes transportation around campus more efficient and less stressful.",
-    "code": "mLb5GdOKQFY",
+    "code": "fEAl8MajeOs",
     "techStack": [
       "React",
       "ExpressJs",
@@ -23,6 +15,29 @@
     ],
     "link": "https://www.slugloop.tech/",
     "github": "https://github.com/IdkwhatImD0ing/SlugLoop"
+  },
+  {
+    "name": "Assistance ",
+    "description": "Assistance is an innovative application that enables users to interact with multiple large language models concurrently, such as Bing Chat, Google Bard, and ChatGPT3.5, offering a more comprehensive and accurate response to queries. The application is designed to allow users to maintain context, switch between models seamlessly, and ask questions to all models, leveraging their unique strengths and making the AI experience more efficient and valuable.",
+    "code": "DAuMnWCKtSk",
+    "techStack": [
+      "Gatsby",
+      "FastAPI",
+      "Material UI",
+      "OpenAI",
+      "Google Bard",
+      "Bing Chat"
+    ],
+    "link": "https://assistance.projects.art3m1s.me/",
+    "github": "https://github.com/IdkwhatImD0ing/Assistance"
+  },
+  {
+    "name": "Paddy Plant Prognosis",
+    "description": "Our web app, Paddy Plant Prognosis, is a game changer for paddy cultivation. It utilizes cutting-edge computer vision technology to help farmers identify diseases in their crops quickly and accurately. With manual disease diagnosis often costly and time-consuming, our app offers a simple solution. By using our app, farmers can easily capture a picture of their plant and upload it to our system for instant analysis. The app then uses its advanced algorithms to identify any potential diseases, providing farmers with actionable information that they can use to protect their crops and avoid potential loss. With Paddy Plant Prognosis, farmers can catch diseases early, saving both time and money that would have been spent on costly treatments and labor. This app is a tool that can make a real difference in the livelihood of farmers, reducing crop loss and increasing yield.",
+    "code": "M_xLQeglzgU",
+    "techStack": ["Vite", "Flask", "Tensorflow", "TailwindCSS", "Keras"],
+    "link": "https://www.paddyplantprognosis.tech/",
+    "github": "https://github.com/IdkwhatImD0ing/PaddyPlantPrognosis"
   },
   {
     "name": "Sink Or Swim",
