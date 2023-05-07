@@ -72,11 +72,7 @@ export default function EducationDisplay() {
             mb: 1,
           }}
         >
-<<<<<<< Updated upstream
-          Major: Computer Science BS | Dates: 2020 - 2023
-=======
           Masters of Science in Computer Science - Artificial Intelligence
->>>>>>> Stashed changes
         </Typography>
       </animated.div>
       <animated.div style={{...zoomRight}}>
