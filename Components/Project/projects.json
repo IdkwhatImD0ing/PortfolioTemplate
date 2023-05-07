@@ -17,6 +17,24 @@
     "github": "https://github.com/IdkwhatImD0ing/SlugLoop"
   },
   {
+    "name": "Memgen ",
+    "description": "Revolutionize your job search with Memgen, the intelligent web app that crafts tailored cover letters from your experience, in a snap! Summarize your projects, work history, and resume, and let our advanced vector database find the perfect match for any job description. Stand out from the crowd with personalized, data-driven cover letters that showcase your unique strengths.",
+    "code": "v5PAwb0BYtw",
+    "techStack": [
+      "NextJS",
+      "Express",
+      "TailwindCSS",
+      "Material UI",
+      "Axios",
+      "OpenAI",
+      "Auth0",
+      "Firebase",
+      "Milvus"
+    ],
+    "link": "https://memgen.art3m1s.me/",
+    "github": "https://github.com/IdkwhatImD0ing/MemGen"
+  },
+  {
     "name": "Assistance ",
     "description": "Assistance is an innovative application that enables users to interact with multiple large language models concurrently, such as Bing Chat, Google Bard, and ChatGPT3.5, offering a more comprehensive and accurate response to queries. The application is designed to allow users to maintain context, switch between models seamlessly, and ask questions to all models, leveraging their unique strengths and making the AI experience more efficient and valuable.",
     "code": "DAuMnWCKtSk",

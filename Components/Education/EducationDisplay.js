@@ -67,11 +67,16 @@ export default function EducationDisplay() {
       <animated.div style={{...zoomLeft}}>
         <Typography
           color="white"
+          variant="h5"
           sx={{
             mb: 1,
           }}
         >
+<<<<<<< Updated upstream
           Major: Computer Science BS | Dates: 2020 - 2023
+=======
+          Masters of Science in Computer Science - Artificial Intelligence
+>>>>>>> Stashed changes
         </Typography>
       </animated.div>
       <animated.div style={{...zoomRight}}>
@@ -82,11 +87,11 @@ export default function EducationDisplay() {
             mb: 10,
           }}
         >
-          Areas of Focus: Full-Stack Web Dev, Machine Learning
+          Full-Stack Web Dev, Machine Learning
         </Typography>
       </animated.div>
-      <Grid container spacing={2} width="80%">
-        <Grid item md={6} xs={12}>
+      <Grid container spacing={2} width="90%">
+        <Grid item md={4} xs={12}>
           <Stack
             direction="column"
             alignItems="center"
@@ -134,7 +139,7 @@ export default function EducationDisplay() {
             </animated.div>
           </Stack>
         </Grid>
-        <Grid item md={6} xs={12}>
+        <Grid item md={4} xs={12}>
           <Stack
             direction="column"
             alignItems="center"
@@ -172,15 +177,65 @@ export default function EducationDisplay() {
             </animated.div>
             <animated.div style={{...zoomUp1}}>
               <Typography color="white" variant="h4" align="center">
-                University of California
+                University of California - Santa Cruz
+              </Typography>
+            </animated.div>
+            <animated.div style={{...zoomUp1}}>
+              <Typography color="white" variant="h6" align="center">
+                Bachelor of Science in Computer Science with Honors
               </Typography>
             </animated.div>
             <animated.div style={{...zoomUp2}}>
-              <Typography color="white" variant="h5" align="center">
-                Santa Cruz
-              </Typography>
               <Typography color="white" align="center">
                 Dates: 2020-2023
+              </Typography>
+            </animated.div>
+          </Stack>
+        </Grid>
+        <Grid item md={4} xs={12}>
+          <Stack
+            direction="column"
+            alignItems="center"
+            justifyContent="flex-start"
+            spacing={2}
+          >
+            <animated.div style={{...zoomUp}}>
+              <Box
+                component="img"
+                src="/usc.png"
+                width="200px"
+                height="200px"
+                alt="usc logo"
+                sx={{
+                  transition: 'transform 0.3s ease',
+                  perspective: '1000px',
+                  '&:hover': {
+                    animation: 'flip 5s ease-in-out infinite',
+                  },
+
+                  '@keyframes flip': {
+                    '0%': {
+                      transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                    },
+                    '50%': {
+                      transform:
+                        'rotateX(180deg) rotateY(-180deg) rotateZ(180deg)',
+                    },
+                    '100%': {
+                      transform: 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)',
+                    },
+                  },
+                }}
+              />
+            </animated.div>
+            <animated.div style={{...zoomUp1}}>
+              <Typography color="white" variant="h4" align="center">
+                University of Southern California
+              </Typography>
+            </animated.div>
+            <animated.div style={{...zoomUp2}}>
+              <Typography color="white" align="center">
+                Expected Dates: 2020-2023
               </Typography>
             </animated.div>
           </Stack>
