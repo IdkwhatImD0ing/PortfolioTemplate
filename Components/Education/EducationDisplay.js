@@ -68,6 +68,7 @@ export default function EducationDisplay() {
         <Typography
           color="white"
           variant="h5"
+          align="center"
           sx={{
             mb: 1,
           }}
@@ -126,6 +127,11 @@ export default function EducationDisplay() {
             <animated.div style={{...zoomUp1}}>
               <Typography color="white" variant="h4" align="center">
                 Lynbrook High School
+              </Typography>
+            </animated.div>
+            <animated.div style={{...zoomUp1}}>
+              <Typography color="white" variant="h6" align="center">
+                High School Diploma
               </Typography>
             </animated.div>
             <animated.div style={{...zoomUp2}}>
@@ -227,6 +233,11 @@ export default function EducationDisplay() {
             <animated.div style={{...zoomUp1}}>
               <Typography color="white" variant="h4" align="center">
                 University of Southern California
+              </Typography>
+            </animated.div>
+            <animated.div style={{...zoomUp1}}>
+              <Typography color="white" variant="h6" align="center">
+                Master of Science in Computer Science - Artificial Intelligence
               </Typography>
             </animated.div>
             <animated.div style={{...zoomUp2}}>

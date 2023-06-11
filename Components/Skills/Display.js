@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
-import {Box, Grid, Stack, Typography} from '@mui/material';
-import {SkillBars} from 'react-skills';
-import {animated, useSpring} from 'react-spring';
-import {WidthContext} from '../page';
+import React, {useContext} from 'react'
+import {Box, Grid, Stack, Typography} from '@mui/material'
+import {SkillBars} from 'react-skills'
+import {animated, useSpring} from 'react-spring'
+import {WidthContext} from '../page'
 
 const programmingLanguages = [
   {name: 'JavaScript', level: 100, color: '#8B8000'},
@@ -11,7 +11,7 @@ const programmingLanguages = [
   {name: 'Haskell', level: 80, color: 'green'},
   {name: 'Java', level: 70, color: 'orange'},
   {name: 'Dart', level: 60, color: 'darkblue'},
-];
+]
 
 const frameworks = [
   {name: 'React', level: 100, color: 'lightblue'},
@@ -19,12 +19,14 @@ const frameworks = [
   {name: 'Flask', level: 85, color: 'blue'},
   {name: 'Express.js', level: 80, color: '#8B8000'},
   {name: 'Node.js', level: 70, color: 'green'},
-];
+]
 
 const databases = [
   {name: 'Firebase', level: 100, color: 'orange'},
-  {name: 'PostgreSQL', level: 80, color: 'darkblue'},
-];
+  {name: 'Milvus', level: 80, color: 'darkred'},
+  {name: 'PostgreSQL', level: 70, color: 'darkblue'},
+  {name: 'Pinecone', level: 20, color: 'darkgreen'},
+]
 
 const libraries = [
   {name: 'Material-UI', level: 100, color: 'lightblue'},
@@ -33,46 +35,46 @@ const libraries = [
   {name: 'Pandas', level: 70, color: 'darkblue'},
   {name: 'NumPy', level: 70, color: '#8B8000'},
   {name: 'Matplotlib', level: 60, color: 'green'},
-];
+]
 
 export default function Display() {
-  const width = useContext(WidthContext);
+  const width = useContext(WidthContext)
   const fadeIn = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
-  });
+  })
   const fadeTop = useSpring({
     from: {opacity: 0, top: -100},
     to: {opacity: 1, top: 0},
-  });
+  })
   const fadeBottom = useSpring({
     from: {opacity: 0, bottom: -100},
     to: {opacity: 1, bottom: 0},
-  });
+  })
 
   const left = useSpring({
     from: {x: -300, opacity: 0},
     to: {x: 0, opacity: 1},
     delay: 250,
-  });
+  })
 
   const top = useSpring({
     from: {y: -300, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 500,
-  });
+  })
 
   const right = useSpring({
     from: {x: 300, opacity: 0},
     to: {x: 0, opacity: 1},
     delay: 750,
-  });
+  })
 
   const bottom = useSpring({
     from: {y: 300, opacity: 0},
     to: {y: 0, opacity: 1},
     delay: 1000,
-  });
+  })
 
   return (
     <Box
@@ -144,5 +146,5 @@ export default function Display() {
         <Box height="10vh" />
       </Stack>
     </Box>
-  );
+  )
 }
