@@ -242,7 +242,7 @@ export default function EducationDisplay() {
             </animated.div>
             <animated.div style={{...zoomUp2}}>
               <Typography color="white" align="center">
-                Expected Dates: 2020-2023
+                Expected Dates: 2023-2025
               </Typography>
             </animated.div>
           </Stack>

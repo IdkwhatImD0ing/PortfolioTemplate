@@ -1,17 +1,17 @@
-import React, {useEffect, useState, useRef} from 'react';
-import {Box, Button, Grid, Stack, Typography} from '@mui/material';
-import YouTube from 'react-youtube';
-import {animated, useSpring} from '@react-spring/web';
-import {useIntersectionObserver} from '../page';
+import React, {useEffect, useState, useRef} from 'react'
+import {Box, Button, Grid, Stack, Typography} from '@mui/material'
+import YouTube from 'react-youtube'
+import {animated, useSpring} from '@react-spring/web'
+import {useIntersectionObserver} from '../page'
 
 export default function LeftProject(props) {
   // Window height and width tracker
-  const [windowHeight, setWindowHeight] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(0);
-  const triggerRef = useRef();
+  const [windowHeight, setWindowHeight] = useState(0)
+  const [windowWidth, setWindowWidth] = useState(0)
+  const triggerRef = useRef()
   const dataRef = useIntersectionObserver(triggerRef, {
     freezeOnceVisible: false,
-  });
+  })
 
   const fadeLeft = useSpring({
     from: {x: -100, opacity: 0},
@@ -19,7 +19,7 @@ export default function LeftProject(props) {
       x: dataRef?.isIntersecting ? 0 : -100,
       opacity: dataRef?.isIntersecting ? 1 : 0,
     },
-  });
+  })
 
   const fadeRight = useSpring({
     from: {x: 100, opacity: 0},
@@ -28,18 +28,18 @@ export default function LeftProject(props) {
       x: dataRef?.isIntersecting ? 0 : 100,
       opacity: dataRef?.isIntersecting ? 1 : 0,
     },
-  });
+  })
 
   // Update window height and width
   useEffect(() => {
     const handleResize = () => {
-      setWindowHeight(window.innerHeight);
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    handleResize();
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+      setWindowHeight(window.innerHeight)
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+    handleResize()
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const opt = {
     height: `${windowHeight * 0.5}`,
@@ -47,7 +47,7 @@ export default function LeftProject(props) {
     playerVars: {
       autoplay: 0,
     },
-  };
+  }
 
   return (
     <Grid
@@ -102,8 +102,9 @@ export default function LeftProject(props) {
                   rowGap: '10px',
                 }}
               >
-                {props.techStack.map((tech) => (
+                {props.techStack.map((tech, index) => (
                   <Box
+                    key={index}
                     sx={{
                       padding: '5px 10px',
                       borderRadius: 2,
@@ -213,5 +214,5 @@ export default function LeftProject(props) {
         </animated.div>
       </Grid>
     </Grid>
-  );
+  )
 }
