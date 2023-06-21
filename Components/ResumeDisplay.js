@@ -6,50 +6,51 @@ import {
   ToggleButtonGroup,
   ToggleButton,
   useTheme,
-} from '@mui/material';
-import React, {useContext, useState} from 'react';
-import {Document, Page, pdfjs} from 'react-pdf';
-import workerSrc from '../pdf-worker';
-import {WidthContext} from './page';
-import {animated, useSpring} from 'react-spring';
-import {useRouter} from 'next/router';
+} from '@mui/material'
+import React, {useContext, useState} from 'react'
+import {Document, Page, pdfjs} from 'react-pdf'
+import workerSrc from '../pdf-worker'
+import {WidthContext} from './page'
+import {animated, useSpring} from 'react-spring'
+import {useRouter} from 'next/router'
 
-pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc
 export default function ResumeDisplay() {
-  const theme = useTheme();
-  const router = useRouter();
-  const width = structuredClone(useContext(WidthContext));
-  const [loading, setLoading] = useState(true);
-  const [mode, setMode] = useState(router.query.mode || 'web');
+  const theme = useTheme()
+  const router = useRouter()
+  const width = structuredClone(useContext(WidthContext))
+  const [loading, setLoading] = useState(true)
+  const [mode, setMode] = useState(router.query.mode || 'web')
 
   const fadeIn = useSpring({
     from: {y: -100, opacity: 0},
     to: {y: 0, opacity: 1},
-  });
+  })
 
   const fade = useSpring({
     from: {opacity: 0},
     to: {opacity: 1},
     delay: 500,
-  });
+  })
 
   // Downloads the pdf
   const onClick = () => {
-    const fileName = 'resume.pdf';
-    const a = document.createElement('a');
-    a.href = '/resume.pdf';
-    a.download = fileName;
-    a.click();
-  };
+    const fileName = 'resume.pdf'
+    const a = document.createElement('a')
+    a.href =
+      mode === 'web' ? '/~jzhan411/resume.pdf' : '/~jzhan411/resume_ml.pdf'
+    a.download = fileName
+    a.click()
+  }
 
   // Changes the mode of the pdf
   const handleChange = (event, newMode) => {
     if (newMode === null) {
-      return;
+      return
     }
-    setLoading(true);
-    setMode(newMode);
-  };
+    setLoading(true)
+    setMode(newMode)
+  }
 
   return (
     <Stack
@@ -109,7 +110,7 @@ export default function ResumeDisplay() {
           <Button
             variant="contained"
             onClick={() => {
-              onClick();
+              onClick()
             }}
           >
             Download
@@ -117,7 +118,9 @@ export default function ResumeDisplay() {
         </animated.div>
       )}
       <Document
-        file={mode === 'web' ? '/resume.pdf' : '/resume_ml.pdf'}
+        file={
+          mode === 'web' ? '/~jzhan411/resume.pdf' : '/~jzhan411/resume_ml.pdf'
+        }
         renderMode="canvas"
         loading={
           <Box>
@@ -132,7 +135,7 @@ export default function ResumeDisplay() {
           renderTextLayer={false}
           width={width < 1000 ? width * 0.8 : 900}
           onRenderSuccess={() => {
-            setLoading(false);
+            setLoading(false)
           }}
         />
       </Document>
@@ -141,7 +144,7 @@ export default function ResumeDisplay() {
           <Button
             variant="contained"
             onClick={() => {
-              onClick();
+              onClick()
             }}
           >
             Download
@@ -149,5 +152,5 @@ export default function ResumeDisplay() {
         </animated.div>
       )}
     </Stack>
-  );
+  )
 }

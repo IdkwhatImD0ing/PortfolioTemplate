@@ -1,11 +1,11 @@
-import {Box, Stack, Button} from '@mui/material';
-import {useRouter} from 'next/router';
-import {useScrollY} from '../page';
-import AnimatedButton from './AnimatedButton';
+import {Box, Stack, Button} from '@mui/material'
+import {useRouter} from 'next/router'
+import {useScrollY} from '../page'
+import AnimatedButton from './AnimatedButton'
 
 export default function TopbarDesktop() {
-  const rounter = useRouter();
-  const scrollY = useScrollY();
+  const rounter = useRouter()
+  const scrollY = useScrollY()
   return (
     <Box
       height="5vh"
@@ -36,35 +36,35 @@ export default function TopbarDesktop() {
       >
         <AnimatedButton
           onClick={() => {
-            rounter.push('/');
+            rounter.push('/')
           }}
         >
           Home
         </AnimatedButton>
         <AnimatedButton
           onClick={() => {
-            rounter.push('/projects');
+            rounter.push('/projects')
           }}
         >
           Projects
         </AnimatedButton>
         <AnimatedButton
           onClick={() => {
-            rounter.push('/education');
+            rounter.push('/education')
           }}
         >
           Education
         </AnimatedButton>
         <AnimatedButton
           onClick={() => {
-            rounter.push('/skills');
+            rounter.push('/skills')
           }}
         >
           Skills
         </AnimatedButton>
         <AnimatedButton
           onClick={() => {
-            rounter.push('/resume');
+            rounter.push('/resume')
           }}
         >
           Resume
@@ -72,5 +72,5 @@ export default function TopbarDesktop() {
         <AnimatedButton>Awards</AnimatedButton>
       </Stack>
     </Box>
-  );
+  )
 }
