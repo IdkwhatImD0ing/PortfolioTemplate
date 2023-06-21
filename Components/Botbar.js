@@ -28,7 +28,7 @@ export default function Botbar() {
         <Link href="https://www.linkedin.com/in/bill-zhang1" target="_blank">
           <Box
             component="img"
-            src="/LinkedIn.png"
+            src="/~jzhan411/LinkedIn.png"
             width="30px"
             height="30px"
             alt="LinkedIn Logo"
@@ -59,7 +59,7 @@ export default function Botbar() {
         <Link href="https://github.com/IdkwhatImD0ing/" target="_blank">
           <Box
             component="img"
-            src="/github.png"
+            src="/~jzhan411/github.png"
             width="30px"
             height="30px"
             alt="Github Logo"
@@ -89,7 +89,7 @@ export default function Botbar() {
         <Link href="https://devpost.com/IdkwhatImD0ing/" target="_blank">
           <Box
             component="img"
-            src="/devpost.png"
+            src="/~jzhan411/devpost.png"
             width="30px"
             height="30px"
             alt="Devpost Logo"

@@ -17,9 +17,9 @@ export default function Home() {
         />
         <meta name="theme-color" content="#7e00de" />
         <title>Art3m1s Portfolio</title>
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <link rel="manifest" href="/~jzhan411/manifest.json" />
+        <link rel="shortcut icon" href="/~jzhan411/favicon.ico" />
+        <link rel="apple-touch-icon" href="/~jzhan411/apple-icon.png"></link>
       </Head>
       <HomePage />
     </>

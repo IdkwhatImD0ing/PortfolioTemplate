@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "npm run build"
+    "export": "next export"
   },
   "dependencies": {
     "@babel/preset-env": "^7.20.2",

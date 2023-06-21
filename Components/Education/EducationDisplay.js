@@ -98,7 +98,7 @@ export default function EducationDisplay() {
             <animated.div style={{...zoomUp}}>
               <Box
                 component="img"
-                src="/lynbrook.png"
+                src="/~jzhan411/lynbrook.png"
                 width="200px"
                 height="200px"
                 alt="lynbrook logo"
@@ -151,7 +151,7 @@ export default function EducationDisplay() {
             <animated.div style={{...zoomUp}}>
               <Box
                 component="img"
-                src="/ucsc.png"
+                src="/~jzhan411/ucsc.png"
                 width="200px"
                 height="200px"
                 alt="ucsc logo"
@@ -204,7 +204,7 @@ export default function EducationDisplay() {
             <animated.div style={{...zoomUp}}>
               <Box
                 component="img"
-                src="/usc.png"
+                src="/~jzhan411/usc.png"
                 width="200px"
                 height="200px"
                 alt="usc logo"

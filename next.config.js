@@ -5,6 +5,8 @@ const withPWA = require('next-pwa')({
   skipWaiting: true,
 })
 const nextConfig = {
+  basePath: '/~jzhan411',
+  assetPrefix: '/~jzhan411/',
   reactStrictMode: true,
   swcMinify: true,
   webpack: (config) => {
