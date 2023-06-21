@@ -7,6 +7,7 @@ const withPWA = require('next-pwa')({
 const nextConfig = {
   basePath: '/~jzhan411',
   assetPrefix: '/~jzhan411/',
+  trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
   webpack: (config) => {
