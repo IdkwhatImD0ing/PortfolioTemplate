@@ -85,14 +85,12 @@ export default function Hero() {
               mt: 5,
             }}
           >
-            I am an incoming Master of Science student in Computer Science at
-            the University of Southern California, specializing in Artificial
-            Intelligence. As a recent graduate from UC Santa Cruz, I have a
-            strong foundation in Machine Learning and Full-Stack Web
-            Development. My skills as a Full-Stack Developer encompass React,
-            Vue, Flask, Express, and PostgreSQL. Additionally, I have applied my
-            Machine Learning expertise through personal projects and Kaggle
-            Competitions.
+            As an MSCS student at USC, I combine Machine Learning and Full-Stack
+            Web Development, orchestrating a symphony of code. The Developer in
+            me crafts robust applications with tools like React, Vue, and Flask,
+            each project a reflection of my skills. My journey in Machine
+            Learning matures with each Kaggle Competition and innovative project
+            I undertake. Feel free to explore further and connect with me below!
           </Typography>
         </animated.div>
       </Stack>
