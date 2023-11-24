@@ -131,30 +131,34 @@ export default function LeftProject(props) {
                   mb: 2,
                 }}
               >
-                <Button
-                  variant="contained"
-                  onClick={() => window.open(props.link)}
-                  sx={{
-                    borderRadius: 50,
-                    textTransform: 'none',
-                  }}
-                >
-                  <Typography variant="h7" align="center">
-                    Demo
-                  </Typography>
-                </Button>
-                <Button
-                  variant="contained"
-                  onClick={() => window.open(props.github)}
-                  sx={{
-                    borderRadius: 50,
-                    textTransform: 'none',
-                  }}
-                >
-                  <Typography variant="h7" align="center">
-                    Github
-                  </Typography>
-                </Button>
+                {props.link && (
+                  <Button
+                    variant="contained"
+                    onClick={() => window.open(props.link)}
+                    sx={{
+                      borderRadius: 50,
+                      textTransform: 'none',
+                    }}
+                  >
+                    <Typography variant="h7" align="center">
+                      Demo
+                    </Typography>
+                  </Button>
+                )}
+                {props.github && (
+                  <Button
+                    variant="contained"
+                    onClick={() => window.open(props.github)}
+                    sx={{
+                      borderRadius: 50,
+                      textTransform: 'none',
+                    }}
+                  >
+                    <Typography variant="h7" align="center">
+                      Github
+                    </Typography>
+                  </Button>
+                )}
               </Stack>
             </Stack>
           </animated.div>

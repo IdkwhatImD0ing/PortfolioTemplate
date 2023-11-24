@@ -1,6 +1,6 @@
 [
   {
-    "name": "SlugLoop ",
+    "name": "SlugLoop",
     "description": "SlugLoop is a real-time map app designed to help UC Santa Cruz students navigate campus with ease by providing up-to-date information on the location and routes of loop buses, reducing pressure on the metro buses during peak hours, and providing a seamless user experience. With a simple and attractive interface, SlugLoop offers an incredibly useful service to students that makes transportation around campus more efficient and less stressful.",
     "code": "DlAGp-IjtJM",
     "techStack": [
@@ -15,6 +15,21 @@
     ],
     "link": "https://www.slugloop.tech/",
     "github": "https://github.com/IdkwhatImD0ing/SlugLoop"
+  },
+  {
+    "name": "WebWeaver",
+    "description": "WebWeaver is an innovative AI-powered website generation tool that revolutionizes the process of designing and editing websites. Utilizing GPT-Vision, a state-of-the-art multimodal language model, the platform allows for the creation of website drafts based on user inputs, streamlining the design process. It features an advanced code editing interface for users with web development experience, coupled with a user-friendly dashboard for easy management of the entire website creation cycle.",
+    "code": "V977Ydky1DI",
+    "techStack": [
+      "NextJS",
+      "FastAPI",
+      "OpenAI",
+      "Axios",
+      "Clerk",
+      "Google Cloud",
+      "Redis"
+    ],
+    "link": "https://www.slugloop.tech/"
   },
   {
     "name": "Memgen ",
